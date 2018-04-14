@@ -1,2 +1,15 @@
- Code_2018
-部分文件夹为Dev C++编辑的源代码文件（.cpp和.exe），其余为VS2017工程。
+Code_2018
+-------------
+Dev C++源码文件：
+- Algorithm
+- Array + Characters
+- File
+- Math
+- Pointer
+- Sorting
+- Others
+
+----------
+VS2017工程文件：
+- 排序
+- 数据结构
