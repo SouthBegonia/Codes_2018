@@ -11,6 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "栈__纸牌游戏", "栈__�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表", "链表\链表.vcxproj", "{CF669F40-1971-4E65-AFC1-E1BBF8CD76FA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表__模拟链表", "链表__模拟链表\链表__模拟链表.vcxproj", "{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表__数据排序并插入多个数字", "链表__数据排序并插入多个数字\链表__数据排序并插入多个数字.vcxproj", "{98174F31-47AA-4BDE-8476-89A37926CD7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +55,22 @@ Global
 		{CF669F40-1971-4E65-AFC1-E1BBF8CD76FA}.Release|x64.Build.0 = Release|x64
 		{CF669F40-1971-4E65-AFC1-E1BBF8CD76FA}.Release|x86.ActiveCfg = Release|Win32
 		{CF669F40-1971-4E65-AFC1-E1BBF8CD76FA}.Release|x86.Build.0 = Release|Win32
+		{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}.Debug|x64.ActiveCfg = Debug|x64
+		{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}.Debug|x64.Build.0 = Debug|x64
+		{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}.Debug|x86.ActiveCfg = Debug|Win32
+		{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}.Debug|x86.Build.0 = Debug|Win32
+		{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}.Release|x64.ActiveCfg = Release|x64
+		{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}.Release|x64.Build.0 = Release|x64
+		{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}.Release|x86.ActiveCfg = Release|Win32
+		{B1EFDE76-20D3-4CC7-A9E2-639BE368DD17}.Release|x86.Build.0 = Release|Win32
+		{98174F31-47AA-4BDE-8476-89A37926CD7F}.Debug|x64.ActiveCfg = Debug|x64
+		{98174F31-47AA-4BDE-8476-89A37926CD7F}.Debug|x64.Build.0 = Debug|x64
+		{98174F31-47AA-4BDE-8476-89A37926CD7F}.Debug|x86.ActiveCfg = Debug|Win32
+		{98174F31-47AA-4BDE-8476-89A37926CD7F}.Debug|x86.Build.0 = Debug|Win32
+		{98174F31-47AA-4BDE-8476-89A37926CD7F}.Release|x64.ActiveCfg = Release|x64
+		{98174F31-47AA-4BDE-8476-89A37926CD7F}.Release|x64.Build.0 = Release|x64
+		{98174F31-47AA-4BDE-8476-89A37926CD7F}.Release|x86.ActiveCfg = Release|Win32
+		{98174F31-47AA-4BDE-8476-89A37926CD7F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
