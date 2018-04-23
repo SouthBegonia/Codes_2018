@@ -1,5 +1,5 @@
 ﻿  广度优先搜索__补全地图.cpp
-c:\users\zzw\desktop\c code\code_2018\搜索方法\广度优先搜索__补全地图\广度优先搜索__补全地图.cpp(28): warning C4101: “my”: 未引用的局部变量
-c:\users\zzw\desktop\c code\code_2018\搜索方法\广度优先搜索__补全地图\广度优先搜索__补全地图.cpp(28): warning C4101: “mx”: 未引用的局部变量
-c:\users\zzw\desktop\c code\code_2018\搜索方法\广度优先搜索__补全地图\广度优先搜索__补全地图.cpp(28): warning C4101: “i”: 未引用的局部变量
+c:\users\zzw\desktop\c code\code_2018\搜索方法\广度优先搜索__补全地图\广度优先搜索__补全地图.cpp(29): warning C4101: “my”: 未引用的局部变量
+c:\users\zzw\desktop\c code\code_2018\搜索方法\广度优先搜索__补全地图\广度优先搜索__补全地图.cpp(29): warning C4101: “mx”: 未引用的局部变量
+c:\users\zzw\desktop\c code\code_2018\搜索方法\广度优先搜索__补全地图\广度优先搜索__补全地图.cpp(29): warning C4101: “i”: 未引用的局部变量
   广度优先搜索__补全地图.vcxproj -> C:\Users\zzw\Desktop\C code\Code_2018\搜索方法\Debug\广度优先搜索__补全地图.exe
