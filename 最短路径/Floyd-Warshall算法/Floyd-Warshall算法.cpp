@@ -28,7 +28,7 @@ int main()
 	for (k = 1; k <= n; k++)
 		for (i = 1; i <= n; i++)
 			for (j = 1; j <= n; j++)
-				if (e[i][j] > e[i][k] + e[k][j])
+				if (e[i][j] > e[i][k] + e[k][j])			// 该过程称为"松弛"
 					e[i][j] = e[i][k] + e[k][j];
 	/*
 		Floyd-Warshall算法核心：
