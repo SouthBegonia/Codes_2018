@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dijkstra算法", "Dijkstra�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bellman-Ford算法", "Bellman-Ford算法\Bellman-Ford算法.vcxproj", "{10D1A652-CD53-4807-B0A4-0ACDD75D6D64}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bellman-Ford算法的队列优化", "Bellman-Ford算法的队列优化\Bellman-Ford算法的队列优化.vcxproj", "{5AC15EB1-856C-4DB3-81B9-BA0672069631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{10D1A652-CD53-4807-B0A4-0ACDD75D6D64}.Release|x64.Build.0 = Release|x64
 		{10D1A652-CD53-4807-B0A4-0ACDD75D6D64}.Release|x86.ActiveCfg = Release|Win32
 		{10D1A652-CD53-4807-B0A4-0ACDD75D6D64}.Release|x86.Build.0 = Release|Win32
+		{5AC15EB1-856C-4DB3-81B9-BA0672069631}.Debug|x64.ActiveCfg = Debug|x64
+		{5AC15EB1-856C-4DB3-81B9-BA0672069631}.Debug|x64.Build.0 = Debug|x64
+		{5AC15EB1-856C-4DB3-81B9-BA0672069631}.Debug|x86.ActiveCfg = Debug|Win32
+		{5AC15EB1-856C-4DB3-81B9-BA0672069631}.Debug|x86.Build.0 = Debug|Win32
+		{5AC15EB1-856C-4DB3-81B9-BA0672069631}.Release|x64.ActiveCfg = Release|x64
+		{5AC15EB1-856C-4DB3-81B9-BA0672069631}.Release|x64.Build.0 = Release|x64
+		{5AC15EB1-856C-4DB3-81B9-BA0672069631}.Release|x86.ActiveCfg = Release|Win32
+		{5AC15EB1-856C-4DB3-81B9-BA0672069631}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
