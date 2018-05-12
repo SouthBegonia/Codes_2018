@@ -1,0 +1,5 @@
+﻿  练习1-5_猜测随机范围内的数.cpp
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c1_猜数游戏\练习1-5_猜测随机范围内的数\练习1-5_猜测随机范围内的数.cpp(7): warning C4005: “RAND_MAX”: 宏重定义
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(343): note: 参见“RAND_MAX”的前一个定义
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c1_猜数游戏\练习1-5_猜测随机范围内的数\练习1-5_猜测随机范围内的数.cpp(15): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  练习1-5_猜测随机范围内的数.vcxproj -> C:\Users\zzw\Desktop\C code\Code_2018\BK_明解C语言\C1_猜数游戏\Debug\练习1-5_猜测随机范围内的数.exe

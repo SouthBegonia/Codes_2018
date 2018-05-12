@@ -1,0 +1,3 @@
+﻿  随机数生成.cpp
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c1_猜数游戏\随机数生成\随机数生成.cpp(26): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  随机数生成.vcxproj -> C:\Users\zzw\Desktop\C code\Code_2018\BK_明解C语言\C1_猜数游戏\Debug\随机数生成.exe
