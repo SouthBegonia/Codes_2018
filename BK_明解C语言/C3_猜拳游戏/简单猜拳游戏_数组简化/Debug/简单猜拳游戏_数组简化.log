@@ -1,0 +1,6 @@
+﻿  简单猜拳游戏_数组简化.cpp
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c3_猜拳游戏\简单猜拳游戏_数组简化\简单猜拳游戏_数组简化.cpp(18): error C2440: “初始化”: 无法从“const char [5]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c3_猜拳游戏\简单猜拳游戏_数组简化\简单猜拳游戏_数组简化.cpp(18): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c3_猜拳游戏\简单猜拳游戏_数组简化\简单猜拳游戏_数组简化.cpp(18): error C2440: “初始化”: 无法从“const char [3]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c3_猜拳游戏\简单猜拳游戏_数组简化\简单猜拳游戏_数组简化.cpp(18): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c3_猜拳游戏\简单猜拳游戏_数组简化\简单猜拳游戏_数组简化.cpp(20): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据

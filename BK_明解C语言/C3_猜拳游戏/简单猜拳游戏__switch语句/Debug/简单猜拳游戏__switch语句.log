@@ -1,0 +1,3 @@
+﻿  简单猜拳游戏__switch语句.cpp
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c3_猜拳游戏\简单猜拳游戏__switch语句\简单猜拳游戏__switch语句.cpp(16): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  简单猜拳游戏__switch语句.vcxproj -> C:\Users\zzw\Desktop\C code\Code_2018\BK_明解C语言\C3_猜拳游戏\Debug\简单猜拳游戏__switch语句.exe
