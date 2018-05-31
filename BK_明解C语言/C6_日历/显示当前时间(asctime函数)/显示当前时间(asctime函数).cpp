@@ -32,7 +32,7 @@ int main()
 {
 	time_t current = time(NULL);		//获取当前时间
 	printf("当前日期和时间：%s", asctime(localtime(&current)));		//此处可自行调用asctime2()函数实现其特定功能
-
+	
 	getchar(); getchar();
 	return 0;
 }

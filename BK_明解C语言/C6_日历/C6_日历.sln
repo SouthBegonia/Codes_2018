@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示当前时间(协调�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示当前时间(asctime函数)", "显示当前时间(asctime函数)\显示当前时间(asctime函数).vcxproj", "{7D9BBD67-6B7A-40B6-867D-E773830DB2F7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "求星期几(mktime函数)", "求星期几(mktime函数)\求星期几(mktime函数).vcxproj", "{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "求星期几(蔡勒公式)", "求星期几(蔡勒公式)\求星期几(蔡勒公式).vcxproj", "{1408B628-8A41-4C6C-9D62-E26D8FD923E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +45,22 @@ Global
 		{7D9BBD67-6B7A-40B6-867D-E773830DB2F7}.Release|x64.Build.0 = Release|x64
 		{7D9BBD67-6B7A-40B6-867D-E773830DB2F7}.Release|x86.ActiveCfg = Release|Win32
 		{7D9BBD67-6B7A-40B6-867D-E773830DB2F7}.Release|x86.Build.0 = Release|Win32
+		{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}.Debug|x64.ActiveCfg = Debug|x64
+		{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}.Debug|x64.Build.0 = Debug|x64
+		{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}.Debug|x86.ActiveCfg = Debug|Win32
+		{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}.Debug|x86.Build.0 = Debug|Win32
+		{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}.Release|x64.ActiveCfg = Release|x64
+		{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}.Release|x64.Build.0 = Release|x64
+		{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}.Release|x86.ActiveCfg = Release|Win32
+		{85A5AF52-F071-4204-BF8A-9B2FDC6D7145}.Release|x86.Build.0 = Release|Win32
+		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Debug|x64.ActiveCfg = Debug|x64
+		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Debug|x64.Build.0 = Debug|x64
+		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Debug|x86.ActiveCfg = Debug|Win32
+		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Debug|x86.Build.0 = Debug|Win32
+		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Release|x64.ActiveCfg = Release|x64
+		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Release|x64.Build.0 = Release|x64
+		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Release|x86.ActiveCfg = Release|Win32
+		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

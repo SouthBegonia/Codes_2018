@@ -1,0 +1,27 @@
+﻿  求星期几(mktime函数).cpp
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1803): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1803): error C2146: 语法错误: 缺少“;”(在标识符“_CRT_SECURE_NO_WARNINGS”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1803): error C2144: 语法错误:“int”的前面应有“;”
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1803): error C2086: “int define”: 重定义
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1798): note: 参见“define”的声明
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1803): error C2086: “int _CRT_SECURE_NO_WARNINGS”: 重定义
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1798): note: 参见“_CRT_SECURE_NO_WARNINGS”的声明
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1985): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1985): error C2086: “int define”: 重定义
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1798): note: 参见“define”的声明
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1985): error C2146: 语法错误: 缺少“;”(在标识符“_CRT_SECURE_NO_WARNINGS”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1985): error C2144: 语法错误:“int”的前面应有“;”
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1985): error C2086: “int _CRT_SECURE_NO_WARNINGS”: 重定义
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1798): note: 参见“_CRT_SECURE_NO_WARNINGS”的声明
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\corecrt_wtime.h(134): error C2146: 语法错误: 缺少“)”(在标识符“_CRT_SECURE_NO_WARNINGS”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\corecrt_wtime.h(150): error C2146: 语法错误: 缺少“)”(在标识符“_CRT_SECURE_NO_WARNINGS”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\time.h(292): error C2146: 语法错误: 缺少“)”(在标识符“_CRT_SECURE_NO_WARNINGS”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\time.h(308): error C2146: 语法错误: 缺少“)”(在标识符“_CRT_SECURE_NO_WARNINGS”的前面)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\求星期几(mktime函数)\求星期几(mktime函数).cpp(35): error C2440: “初始化”: 无法从“const char [3]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\求星期几(mktime函数)\求星期几(mktime函数).cpp(35): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\求星期几(mktime函数)\求星期几(mktime函数).cpp(38): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\求星期几(mktime函数)\求星期几(mktime函数).cpp(39): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\求星期几(mktime函数)\求星期几(mktime函数).cpp(40): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
