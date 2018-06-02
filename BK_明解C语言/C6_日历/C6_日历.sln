@@ -13,6 +13,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "求星期几(mktime函数)"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "求星期几(蔡勒公式)", "求星期几(蔡勒公式)\求星期几(蔡勒公式).vcxproj", "{1408B628-8A41-4C6C-9D62-E26D8FD923E0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示某月日历", "显示某月日历\显示某月日历.vcxproj", "{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示某几个月的日历", "显示某几个月的日历\显示某几个月的日历.vcxproj", "{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +65,22 @@ Global
 		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Release|x64.Build.0 = Release|x64
 		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Release|x86.ActiveCfg = Release|Win32
 		{1408B628-8A41-4C6C-9D62-E26D8FD923E0}.Release|x86.Build.0 = Release|Win32
+		{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}.Debug|x64.ActiveCfg = Debug|x64
+		{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}.Debug|x64.Build.0 = Debug|x64
+		{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}.Debug|x86.ActiveCfg = Debug|Win32
+		{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}.Debug|x86.Build.0 = Debug|Win32
+		{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}.Release|x64.ActiveCfg = Release|x64
+		{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}.Release|x64.Build.0 = Release|x64
+		{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}.Release|x86.ActiveCfg = Release|Win32
+		{4DBA430D-9365-4E57-94E1-8F7F96E1CD05}.Release|x86.Build.0 = Release|Win32
+		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Debug|x64.ActiveCfg = Debug|x64
+		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Debug|x64.Build.0 = Debug|x64
+		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Debug|x86.ActiveCfg = Debug|Win32
+		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Debug|x86.Build.0 = Debug|Win32
+		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Release|x64.ActiveCfg = Release|x64
+		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Release|x64.Build.0 = Release|x64
+		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Release|x86.ActiveCfg = Release|Win32
+		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
