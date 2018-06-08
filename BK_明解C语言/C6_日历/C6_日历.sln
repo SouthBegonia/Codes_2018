@@ -17,6 +17,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示某月日历", "显�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示某几个月的日历", "显示某几个月的日历\显示某几个月的日历.vcxproj", "{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "命令行参数_程序名和程序形式参数的显示", "命令行参数_程序名和程序形式参数的显示\命令行参数_程序名和程序形式参数的显示.vcxproj", "{D03AE28B-D760-45BE-B035-252D6F04E3C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main函数的递归调用", "main函数的递归调用\main函数的递归调用.vcxproj", "{590E1472-C62E-43E2-B89E-14FF75BC8CCE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "静态变量和动态变量简介", "静态变量和动态变量简介\静态变量和动态变量简介.vcxproj", "{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示日历(用命令行指定要显示的年月)", "显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).vcxproj", "{10BBAA26-7FCE-485B-AF73-EABA682D81E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +89,38 @@ Global
 		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Release|x64.Build.0 = Release|x64
 		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Release|x86.ActiveCfg = Release|Win32
 		{2CFB7FBB-95E1-4EDD-9900-FEF57EA85AA3}.Release|x86.Build.0 = Release|Win32
+		{D03AE28B-D760-45BE-B035-252D6F04E3C4}.Debug|x64.ActiveCfg = Debug|x64
+		{D03AE28B-D760-45BE-B035-252D6F04E3C4}.Debug|x64.Build.0 = Debug|x64
+		{D03AE28B-D760-45BE-B035-252D6F04E3C4}.Debug|x86.ActiveCfg = Debug|Win32
+		{D03AE28B-D760-45BE-B035-252D6F04E3C4}.Debug|x86.Build.0 = Debug|Win32
+		{D03AE28B-D760-45BE-B035-252D6F04E3C4}.Release|x64.ActiveCfg = Release|x64
+		{D03AE28B-D760-45BE-B035-252D6F04E3C4}.Release|x64.Build.0 = Release|x64
+		{D03AE28B-D760-45BE-B035-252D6F04E3C4}.Release|x86.ActiveCfg = Release|Win32
+		{D03AE28B-D760-45BE-B035-252D6F04E3C4}.Release|x86.Build.0 = Release|Win32
+		{590E1472-C62E-43E2-B89E-14FF75BC8CCE}.Debug|x64.ActiveCfg = Debug|x64
+		{590E1472-C62E-43E2-B89E-14FF75BC8CCE}.Debug|x64.Build.0 = Debug|x64
+		{590E1472-C62E-43E2-B89E-14FF75BC8CCE}.Debug|x86.ActiveCfg = Debug|Win32
+		{590E1472-C62E-43E2-B89E-14FF75BC8CCE}.Debug|x86.Build.0 = Debug|Win32
+		{590E1472-C62E-43E2-B89E-14FF75BC8CCE}.Release|x64.ActiveCfg = Release|x64
+		{590E1472-C62E-43E2-B89E-14FF75BC8CCE}.Release|x64.Build.0 = Release|x64
+		{590E1472-C62E-43E2-B89E-14FF75BC8CCE}.Release|x86.ActiveCfg = Release|Win32
+		{590E1472-C62E-43E2-B89E-14FF75BC8CCE}.Release|x86.Build.0 = Release|Win32
+		{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}.Debug|x64.ActiveCfg = Debug|x64
+		{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}.Debug|x64.Build.0 = Debug|x64
+		{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}.Debug|x86.ActiveCfg = Debug|Win32
+		{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}.Debug|x86.Build.0 = Debug|Win32
+		{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}.Release|x64.ActiveCfg = Release|x64
+		{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}.Release|x64.Build.0 = Release|x64
+		{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}.Release|x86.ActiveCfg = Release|Win32
+		{7D2B9A4F-14A0-436D-A1A5-0128D87AA2E1}.Release|x86.Build.0 = Release|Win32
+		{10BBAA26-7FCE-485B-AF73-EABA682D81E8}.Debug|x64.ActiveCfg = Debug|x64
+		{10BBAA26-7FCE-485B-AF73-EABA682D81E8}.Debug|x64.Build.0 = Debug|x64
+		{10BBAA26-7FCE-485B-AF73-EABA682D81E8}.Debug|x86.ActiveCfg = Debug|Win32
+		{10BBAA26-7FCE-485B-AF73-EABA682D81E8}.Debug|x86.Build.0 = Debug|Win32
+		{10BBAA26-7FCE-485B-AF73-EABA682D81E8}.Release|x64.ActiveCfg = Release|x64
+		{10BBAA26-7FCE-485B-AF73-EABA682D81E8}.Release|x64.Build.0 = Release|x64
+		{10BBAA26-7FCE-485B-AF73-EABA682D81E8}.Release|x86.ActiveCfg = Release|Win32
+		{10BBAA26-7FCE-485B-AF73-EABA682D81E8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

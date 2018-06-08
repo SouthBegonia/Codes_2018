@@ -77,6 +77,20 @@
 - 功能：比较s1所指额字符串和s2所指额字符串的前n个字符的大小关系(从第一个字符开始逐一比较，当出现不同的字符时，以这对不同字符的大小关系为准)
 - 返回值：若s1和s2相等返回0；若s1大于s2则返回正值；若s1小于s2则返回负值
 
+**strcpy()**
+
+- 头文件：`#include<string.h>`
+- 格式：`char *strcpy(char *s1, const char *s2);`
+- 功能：把*s2*指向的字符串复制到*s1*所指向的数组。当 *s2*与*s1*重叠时，作未定义处理
+- 返回值：返回*s1*的值
+
+**strcat()**
+
+- 头文件：`#include<string.h>`
+- 格式：`char *strcat(char *s1, const char *s2);`
+- 功能：把*s2*指向的字符串复制到*s1*指向的数组的末尾。当 *s2*与*s1* 重叠时，作未定义处理
+- 代码示例：\Code_2018\BK_明解C语言\C6_日历\显示某几个月的日历
+
 **scanf()**
 
 - 头文件：`#include<stdio.h>`
@@ -106,9 +120,86 @@
 
 - 头文件：`#include<stdlib.h>`
 - 格式：`void free(void *ptr);`
-- 功能：释放ptr所指向的空间，让这部分空间能继续用于之后的动态分配。
+- 功能：释放ptr所指向的空间，让这部分空间能继续用于之后的动态分配
 - 返回值：无
 - 代码示例：\Code_2018\BK_明解C语言\C5_记忆力训练\把键盘输入的值存入动态分配的储存空间
+
+**time()**
+
+- 头文件：`#include<time.h>`
+- 格式：`time_t time(time_t *timer);`
+- 功能：决定当前的日历时间。未定义该值得表现形式
+- 返回值：用所在编程环境中的最佳逼近返回求出的日历时间。若日历时间无效则返回值`(time_t)-1`，当*timer*不为空指针时，将返回赋给*timer*指向的对象
+- 代码示例：\Code_2018\BK_明解C语言\C6_日历\显示当前时间(显示结构体信息)
+- 几种时间类型示意图：\Code_2018\BK_明解C语言\C6_日历\显示当前时间(显示结构体信息).jpg
+
+**localtime()**
+
+- 头文件：`#include<time.h>`
+- 格式：`struct tm *localtime(const time_t *timer);`
+- 功能：把*timer*指向的日历时间转换成本地时间表示分解时间
+- 返回值：返回指向转换后的对象的指针
+- 代码示例：\Code_2018\BK_明解C语言\C6_日历\显示当前时间(显示结构体信息)
+
+**gmtime()**
+
+- 头文件：`#include<time.h>`
+- 格式：`struct tm *gmtime(const time_t *timer);`
+- 功能：把*timer*指向的日历时间转换成协调世界时表示的分解时间
+- 返回值：返回指向转换后的对象的指针
+- 代码示例：\Code_2018\BK_明解C语言\C6_日历\显示当前时间(协调世界时UTC格式)
+
+**asctime()**
+
+- 头文件：`#include<time.h>`
+- 格式：`char *asctime(const struct tm *timeptr);`
+- 功能：把*timeptr*指向的结构体的分解时间转换成这种形式的字符串 `Sun Sep 12 13:02:41 2018\n\0`
+- 返回值：返回指向转换后的对象的指针
+- 代码示例：\Code_2018\BK_明解C语言\C6_日历\显示当前时间(asctime函数)
+
+**ctime()**
+
+- 头文件：`#include<time.h>`
+- 格式：`char *ctime(const time_t *timer);`
+- 功能：把`timer`指向的日历时间转换成与`asctime`函数具有相同字符串形式的本地时间，等价于`asctime(localtime(timer))`
+- 返回值：返回以分解时间为实际参数的`asctime`函数返回的指针
+
+**difftime()**
+
+- 头文件：`#include<time.h>`
+- 格式：`double difftime(time_t time1, time_t time0);`
+- 功能：计算两个日历时间的差*time1*-*time0*
+- 返回值：以秒为单位表示求得的时间差，将其作为*double*型返回
+
+**mktime()**
+
+- 头文件：`#include<time.h>`
+- 格式：`time_t mktime(struct tm *timeptr);`
+- 功能：把表示*timeptr*指向的结构体中的本地时间的分解时间转换成与*timer*函数的返回值具有相同表现形式的日历时间。忽略结构体 *tm_wday*与*tm_yday*元素的值。
+- 返回值：把指定的分解时间转换成*time_t*型的值得表现形式并返回。当无法用日历时间表示时，函数会返回值*(time_t)-1*
+- 代码示例：\Code_2018\BK_明解C语言\C6_日历\求星期几(mktime函数)
+
+**sprintf()**
+
+- 头文件：`#include<stdio.h>`
+- 格式：`int sprintf(char *s, const char *format,...);`
+- 功能：除了数据的写入方向是*s*指向的数组而不是标准输出流之外，其他与*printf*函数相同。虽然在已入的输出字符串的末尾会添加空字符，但统计返回字符数时不会将该空字符计算在内。在空间重叠的对象间进行复写操作时，作未定义处理
+- 返回值：返回已写入数组的不包含空字符的字符数
+- 代码示例：\Code_2018\BK_明解C语言\C6_日历\显示某几个月的日历
+
+**toupper()**
+
+- 头文件：`#include<ctype.h>`
+- 格式：`int toupper(int c);`
+- 功能：把小写英文字母转换成对应的大写英文字母
+- 返回值：如果*c*是小写英文字母，就返回转换成大写英文字母的值，否则直接返回*c*
+
+**tolower()**
+
+- 头文件：`#include<ctype.h>`
+- 格式：`int tolower(int c);`
+- 功能：把大写英文字母转换成对应的小写英文字母
+- 返回值：如果*c*是大写英文字母，就返回转换成小写英文字母的值，否则直接返回*c*
 
 -------------------
 **运行错误及解决办法：**

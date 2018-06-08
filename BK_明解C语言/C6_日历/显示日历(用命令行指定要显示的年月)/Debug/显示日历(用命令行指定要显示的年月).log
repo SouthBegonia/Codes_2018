@@ -1,0 +1,23 @@
+﻿  显示日历(用命令行指定要显示的年月).cpp
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): error C2440: “初始化”: 无法从“const char [1]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): error C2440: “初始化”: 无法从“const char [8]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): error C2440: “初始化”: 无法从“const char [9]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): error C2440: “初始化”: 无法从“const char [6]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): error C2440: “初始化”: 无法从“const char [4]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): error C2440: “初始化”: 无法从“const char [5]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): error C2440: “初始化”: 无法从“const char [7]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): error C2440: “初始化”: 无法从“const char [10]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(83): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(126): error C2065: “i”: 未声明的标识符
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(97): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\time.h(505): note: 参见“localtime”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(126): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(126): note: 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c6_日历\显示日历(用命令行指定要显示的年月)\显示日历(用命令行指定要显示的年月).cpp(126): note: 缺失的可变参数 1 为格式字符串“%d”所需
