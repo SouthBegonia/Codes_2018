@@ -1,0 +1,10 @@
+﻿  寻找重复数字_实时键盘输入.cpp
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\寻找重复数字_实时键盘输入\寻找重复数字_实时键盘输入.cpp(22): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\寻找重复数字_实时键盘输入\寻找重复数字_实时键盘输入.cpp(27): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(452): note: 参见“getch”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\寻找重复数字_实时键盘输入\寻找重复数字_实时键盘输入.cpp(58): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(452): note: 参见“getch”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\寻找重复数字_实时键盘输入\寻找重复数字_实时键盘输入.cpp(61): error C4996: 'putch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _putch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(461): note: 参见“putch”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\寻找重复数字_实时键盘输入\寻找重复数字_实时键盘输入.cpp(63): error C4996: 'putch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _putch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(461): note: 参见“putch”的声明
