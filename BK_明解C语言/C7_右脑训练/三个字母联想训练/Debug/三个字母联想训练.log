@@ -1,0 +1,16 @@
+﻿  三个字母联想训练.cpp
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(20): error C2440: “初始化”: 无法从“const char [11]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(20): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(20): error C2440: “初始化”: 无法从“const char [27]”转换为“char *”
+  c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(20): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(30): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(38): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(452): note: 参见“getch”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(61): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(452): note: 参见“getch”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(64): error C4996: 'putch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _putch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(461): note: 参见“putch”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(66): error C4996: 'putch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _putch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(461): note: 参见“putch”的声明
+c:\users\zzw\desktop\c code\code_2018\bk_明解c语言\c7_右脑训练\三个字母联想训练\三个字母联想训练.cpp(69): error C4996: 'putch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _putch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(461): note: 参见“putch”的声明

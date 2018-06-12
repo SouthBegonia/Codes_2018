@@ -1,4 +1,13 @@
 /*
+程序功能：用于访问可变参数的函数
+
+备注：待详解
+
+<stdarg.h>
+va_list型：用于访问可变参数的类型
+va_start宏：负责访问可变参数前的装备工作
+va_arg宏：负责访问后一个可变参数
+va_end宏：复制结束访问可变参数
 
 */
 #include<stdio.h>
@@ -26,6 +35,11 @@ double vsum(int sw, ...)
 		sum += va_arg(ap, long);
 		sum += va_arg(ap, double);
 		break;
+		/*
+		0：把int型的第2参数和int型的第3参数相加
+		1：把int型的第2参数和long型的第3参数相加
+		2：把int型的第2参数和long型的第3参数以及double型的第4参数相加
+		*/
 	}
 	va_end(ap);		//结束访问可变部分的参数
 
