@@ -5,9 +5,9 @@ Dev C++源码文件：
 - Array + Characters
 - File
 - Math
-- Pointer
 - Sorting
 - Others
+- C_pointer
 
 ----------
 VS2017工程文件：
