@@ -1,7 +1,7 @@
 # C_pointer
 --------------
 
-##指针的声明
+## 指针的声明
 C语言声明格式:"类型 变量名;"
 - 基本类型:`int hoge;`
 - 指针类型:`int *pointer;`
@@ -29,17 +29,17 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 
 
 
-##指针运算
+## 指针运算
 
 > 对指针进行加 N 运算, **地址的值**会增加当前指针所指向数据类型的长度 ✖ N
 
 - 代码示例 [pointer-calc.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/pointer_calc.c)
 
-##空指针 
+## 空指针 
 确保没有指向任何一个**实际的对象**或者**函数**的指针.通常使用宏定义**NULL**来表示空指针常量值.
 - 代码示例 [null_pointer.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/null_pointer.c)
 
-##指针与数组
+## 指针与数组
 > 表达式中,数组可以解读成 **"指向它的初始元素的指针"**.(有例外)
 > **p[i]** 是 ***(p+i)** 的简便写法.
 

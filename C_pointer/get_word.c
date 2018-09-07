@@ -25,6 +25,7 @@ int get_word(char *buf, int buf_size, FILE *fp)
 		{
 			/*由于单词太长而提示错误*/
 			fprintf(stderr, "word too long.\n");
+			/* 关于 stderr stdin stdout 说明见 get_word_note.c */
 			exit(1);
 		}
 	}while((ch=getc(fp)) != EOF && isalnum(ch));
