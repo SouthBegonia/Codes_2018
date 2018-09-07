@@ -23,7 +23,7 @@ int main()
 	fprintf(stdout,"Hello ");
 	fprintf(stderr,"World!");
 	/*打印内容应为 "World!Hello "
-	但在在我的环境下(GCC 6.3.0)并未体现有无缓冲区别,待解决*/
+	但在在Dev C环境下(GCC 6.3.0)并未体现有无缓冲区别,待解决. VC++6.0正常*/
 	
 	putchar('\n');
 
