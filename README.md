@@ -8,6 +8,7 @@ Dev C++源码文件：
 - Sorting
 - Others
 - C_pointer
+- 2048
 
 ----------
 VS2017工程文件：
