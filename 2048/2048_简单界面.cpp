@@ -37,6 +37,14 @@ void initlize(void)
 	rnum1 = 0, rnum2 = 0;   //游戏初始页面随机 2 数字的位置
 	play=0;
 
+	/*初始设定：在随机两个位置设置数字2*/
+	for (i = 0; i < 2; i++)
+	{
+		rnum1 = rand() % 4;
+		rnum2 = rand() % 4;
+		chart[rnum1][rnum2] = 2;
+	}
+
 }
 
 /*每次在两个随机空位置添加数字2且检验*/
@@ -248,19 +256,12 @@ void down(void)
 /*开始游戏*/
 void start_game(void)
 {
+	fflush(stdin);
+	system("cls");
 	initlize();     //初始化数组及各变量
 	srand(time(NULL));		//设定种子
-	fflush(stdin);
 	setpos(0,0);		//移动一次后的清屏
 	
-	/*初始设定：在随机两个位置设置数字2*/
-	for (i = 0; i < 2; i++)
-	{
-		rnum1 = rand() % 4;
-		rnum2 = rand() % 4;
-		chart[rnum1][rnum2] = 2;
-	}
-
 	printchart();		//打印起始图表
 
 	while(1)
@@ -300,15 +301,26 @@ void start_game(void)
 	fflush(stdin);
 	printf("\n%*c",29,' ');
 	printf("游戏结束！继续游戏:(Y\\N)");
-	scanf("%c",&play);
-	if(play=='Y'||'y')
-		start_game();
-	else return;
+	
+	//fgets(play,sizeof(buf),stdin);
+	//sscanf(play,"%s",&play);
+	return;
 }
 
  int main()
 {
 	start_game();
+	
+	for(;;)
+	{
+		play=getch();
+		if(play=='Y' || play =='y')
+			start_game();
+		else if(play=='N' || play=='n')
+			break;
+	}
+	printf("Done!\n");
+	getchar();
 	return 0;
 }
  
