@@ -49,3 +49,21 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 - 解决生活中"差1错误"问题
 - 在支持指针的语言中，标号被视作是偏移量，因此从0开始更符合逻辑
 
+> 当今的操作系统都会给应用程序的**每一个进程分配独立的** "虚拟地址空间".
+> 操作系统负责将物理内存分配给虚拟地址空间,同时还会对每一个内存区域设定"只读"或者"可读"属性.
+- 代码示例 [vmtest.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/vmtest.c)
+
+**scanf()说明**
+`scanf()`:连续从**流**中读入字符,对和**格式说明符相匹配的部分**进行变换处理,但是当变换失败(与格式说明符不匹配等),则**读取失败的部分**会残存在**流**中(影响其他语句的读取).
+- 代码示例 [scanf().c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/scanf().c)
+
+## 变量储存地址
+
+| 储存期 |  含义 | 寿命  |
+|---|---|---|
+**静态变量**| 全局变量,文件内的static变量,指定static的局部变量都持有静态储存周期  | 从程序运行时开始,到程序关闭时结束
+**自动变量**| 没有指定static的局部变量持有自动储存期  | 到声明该变量的语句块执行结束为止
+**malloc()**| 变量通过malloc()分配的领域 | 到free()释放为止
+
+- 代码示例 [print_address.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/print_address.c)
+
