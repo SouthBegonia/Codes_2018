@@ -102,3 +102,13 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 
 为了**提高CPU的效率**,**编译器**会适当地进行 **边界调整(布局对齐)** ,在结构体中插入合适的**填充物**(也就是再添加适当大小的储存空间). 但即便使用手工进行布局对其,也不能提高可移植性.
 - 代码示例 [alignment.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/alignment.c)
+
+## 字节序
+
+[字节序](https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E5%BA%8F/1457160)，即**字节在电脑中存放时的序列**与输入（输出）时的序列是先到的在前还是后到的在前.
+
+字节排序分为**大端字节序**和**小端字节序**. 说明见代码
+- 代码示例 [byteorder.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/byteorder.c)
+- 无论是整数还是浮点数,内存上的表现形式都随环境(CPU)的不同而不同.
+
+![字节排序](https://i.imgur.com/N2eJ7hQ.png)
