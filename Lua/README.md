@@ -51,4 +51,4 @@ print("Hello World！")
 |thread 	|表示执行的独立线路，用于执行协同程序|
 |table	 |Lua 中的表（table）其实是一个"关联数组"（associative arrays），数组的索引可以是数字或者是字符串。在 Lua 里，table 的创建是通过"构造表达式"来完成，最简单构造表达式是{}，用来创建一个空表|
 
-- 代码示例 [数据类型.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/数据类型.lua)
+- 代码示例 [数据类型.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/数据类型.lua)
