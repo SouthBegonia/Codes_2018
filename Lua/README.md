@@ -52,3 +52,34 @@ print("Hello World！")
 |table	 |Lua 中的表（table）其实是一个"关联数组"（associative arrays），数组的索引可以是数字或者是字符串。在 Lua 里，table 的创建是通过"构造表达式"来完成，最简单构造表达式是{}，用来创建一个空表|
 
 - 代码示例 [数据类型.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/数据类型.lua)
+
+## 循环
+**While 循环**
+```
+while(condition)	-- 为真时执行循环体语句
+do
+   statements
+end
+```
+
+**For 循环**
+- 数值for循环
+```
+-- var从exp1变化到exp2，每次变化以exp3为步长递增var，并执行一次"执行体"。exp3是可选的，如果不指定，默认为1
+for var=exp1,exp2,exp3 do  
+    <执行体>  
+end
+```
+
+- 泛型for循环
+```
+-- i是数组索引值，v是对应索引的数组元素值。ipairs是Lua提供的一个迭代器函数，用来迭代数组
+-- 打印数组a的所有值  
+a = {"one", "two", "three"}
+for i, v in ipairs(a) do
+    print(i, v)
+end 
+```
+
+**嵌套循环**
+- 代码示例 [loop.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/loop.lua)
