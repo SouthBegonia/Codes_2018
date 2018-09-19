@@ -83,3 +83,43 @@ end
 
 **嵌套循环**
 - 代码示例 [loop.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/loop.lua)
+
+## 流程控制
+> Lua 认为 false 和 nil 为假，true 和 非nil 为真, **Lua中 0 为 true**
+
+**if语句**
+```
+if(布尔表达式)
+then
+   --[ 在布尔表达式为 true 时执行的语句 --]
+end
+```
+
+**if...else语句**
+```
+if(布尔表达式)
+then
+   --[ 布尔表达式为 true 时执行该语句块 --]
+else
+   --[ 布尔表达式为 false 时执行该语句块 --]
+end
+```
+
+**if...elseif...else**
+```
+if( 布尔表达式 1)
+then
+   --[ 在布尔表达式 1 为 true 时执行该语句块 --]
+
+elseif( 布尔表达式 2)
+then
+   --[ 在布尔表达式 2 为 true 时执行该语句块 --]
+
+elseif( 布尔表达式 3)
+then
+   --[ 在布尔表达式 3 为 true 时执行该语句块 --]
+else 
+   --[ 如果以上布尔表达式都不为 true 则执行该语句块 --]
+end
+```
+- 代码示例 [流程控制.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/流程控制.lua)
