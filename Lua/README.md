@@ -123,3 +123,21 @@ else
 end
 ```
 - 代码示例 [流程控制.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/流程控制.lua)
+
+## 函数
+函数定义格式：
+```
+optional_function_scope  function function_name( argument1, argument2, argument3..., argumentn)
+    function_body
+    return result_params_comma_separated
+end
+```
+
+|          |         |
+|----------|---------|
+| optional_function_scope | 可选的制定函数是全局函数还是局部函数，未设置该参数默认为全局函数 |
+| function_name |指定函数名称 |
+|argument1, argument2, argument3..., argumentn| 函数的参数，多个参数用逗号隔开，也可以不带参数|
+|function_body |函数体|
+|result_params_comma_separated| 函数返回值，Lua语言函数可以返回多个值，每个值以逗号隔开|
+
