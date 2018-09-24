@@ -10,7 +10,7 @@ end
 
 print("两值比较最大值为",max(10,4))
 print("两值比较最大值为",max(5,6))
-
+print()
 
 -- 将函数作为参数传递给函数
 function myprint ( param )
@@ -24,9 +24,8 @@ end
 
 myprint(10)	-- 第一次打印
 
-
 add(2,5,myprint)  -- 将 myprint 函数作为参数传递
-
+print()
 
 -- 多返回值
 function  maxinum( a )
@@ -42,7 +41,7 @@ function  maxinum( a )
 end
 
 print(maxinum({8,10,23,12,5}))
-
+print()
 
 -- 可变参数
 function add2( ... )
@@ -53,8 +52,8 @@ function add2( ... )
 	return s
 end
 
-print(add2(3,4,5,6,7))
-
+print(add2(3,4,5,6,7))	--25
+print()
 
 -- 计算几个数的平均值
 function average( ... )
@@ -68,7 +67,7 @@ function average( ... )
 end
 print("平均值为",average(10,5,3,4,5,6))
 
--- 也可以使用select("#",...) 来获取可变参数的数量
+-- 也可以使用select("#",...) 来获取可变参数的数量, 返回可变参数的长度
 function average2( ... )
 	result = 0
 	local arg={...}
@@ -79,3 +78,15 @@ function average2( ... )
 	return result/select("#",...)
 end
 print("平均值为",average2(10,5,3,4,5,6))
+print()
+
+-- select(n, …) 用于访问 n 到 select('#',…) 的参数
+do
+	function foo( ... )
+		for i=1,  select('#',...) do
+			local arg = select(i,...)
+			print("arg",arg)
+		end
+	end
+	foo(1,2,3,4)
+end
