@@ -34,15 +34,3 @@ int get_word(char *buf, int buf_size, FILE *fp)
 	return len;
 }
 
-int main()
-{
-	char buf[256];  //限定单词的最大长度
-	
-	while(get_word(buf, 256, stdin) !=EOF)
-	{
-		printf("<<%s>>\n",buf);
-	}
-	
-	getchar();
-	return 0;
-}
