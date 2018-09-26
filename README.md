@@ -1,5 +1,5 @@
 -------------
-## Dev C++源码文件：
+## Dev C++ 文件：
 - Algorithm
 - Array + Characters
 - File
@@ -8,6 +8,7 @@
 - Others
 - C_pointer
 - 2048
+- 头文件和源文件关系
 
 ## VS2017工程文件：
 - 排序
