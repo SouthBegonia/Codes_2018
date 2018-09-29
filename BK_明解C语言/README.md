@@ -209,16 +209,24 @@
 - 返回值：返回读取的字符的值(ASCII码)，错误则返回EOF
 - 代码示例：\Code_2018\BK_明解C语言\C7_右脑训练\getch的使用示例
 
-**getchar**
+**getchar()**
 
 - 头文件：`#include<stdio.h>`
 - 格式：`int getchar(void);`
 - 功能：用户输入的字符被存放在键盘缓冲区中。直到用户按回车为止（回车字符也放在缓冲区中）。当用户键入回车之后，getchar才开始从stdio流中每次读入一个字符。
 - 返回值：返回读取的字符的值(ASCII码)，错误则返回EOF
 
-> 关于 gets/getch/getchar 这几种简单函数区别见 \Code_2018\BK_明解C语言\get类函数区别.cpp
+关于 gets/getch/getchar 这几种简单函数区别见 [get类函数区别.cpp](https://github.com/SouthBegonia/Codes_2018/blob/master/BK_%E6%98%8E%E8%A7%A3C%E8%AF%AD%E8%A8%80/get%E7%B1%BB%E5%87%BD%E6%95%B0%E5%8C%BA%E5%88%AB.cpp)
 
-**putch**
+**kbhit()**
+
+- 头文件：`#include<conio.h>`
+- 格式：`int kbhit(void);`
+- 功能：检查当前是否有键盘输入
+- 返回值：若有则返回一个非0值，否则返回0
+- 代码示例：[kbhit.c](https://github.com/SouthBegonia/Codes_2018/blob/master/BK_%E6%98%8E%E8%A7%A3C%E8%AF%AD%E8%A8%80/kbhit.c)
+
+**putch()**
 
 - 头文件：`#include<conio.h>`
 - 格式：`int putch(int c);`
@@ -226,7 +234,7 @@
 - 备注：其中c可以是被单引号（英文状态下）引起来的一个字符，可以是介于0~127之间的一个十进制整型数（包含0和127），也**可以**为char定义好的一个字符型变量
 - 返回值：显示成功后返回字符c，错误则返回EOF
 
-**putchar**
+**putchar()**
 
 - 头文件：`#include<stdio.h>`
 - 格式：`int putchar(int c);`
@@ -234,7 +242,7 @@
 - 备注：其中c可以是被单引号（英文状态下）引起来的一个字符，可以是介于0~127之间的一个十进制整型数（包含0和127），也**可以**是事先用char定义好的一个字符型变量
 - 返回值：当输出成功返回字符c，错误则返回EOF
 
-> 关于 puts/putch/putchar 这几种简单函数区别见 \Code_2018\BK_明解C语言\put类函数区别.cpp
+关于 puts/putch/putchar 这几种简单函数区别见 [put类函数区别.cpp](https://github.com/SouthBegonia/Codes_2018/blob/master/BK_%E6%98%8E%E8%A7%A3C%E8%AF%AD%E8%A8%80/put%E7%B1%BB%E5%87%BD%E6%95%B0%E5%8C%BA%E5%88%AB.cpp)
 
 
 -------------------
