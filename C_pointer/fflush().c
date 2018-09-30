@@ -15,6 +15,7 @@ int main(){
     c = getchar();
     printf("a = %d, c = %c \n", a, c);
     
-    getchar();
+	getchar();
+	getchar();
     return 0;
 }
