@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 /*结构体*/
 typedef struct
@@ -25,6 +26,7 @@ int main()
 {
 	COMPLEX_2 f;
 	struct NODE n1,n2;
+	char talk[1000];
 	
 	f.a = 12;
 	f.com1.a = 'Z';
@@ -33,9 +35,14 @@ int main()
 	printf("f.com1.a = %c\n",f.com1.a);
 	printf("--------------\n");
 	
-	/*如何将字符串赋予 string 内*/
-	scanf("%s",&n1.string);
-	printf("%s",n1.string);
+	/*将字符串赋予 string 内，可以scanf(),strcpy()*/
+	strcpy(n1.string, "Hello");
+	printf("%s\n",n1.string);
+	fflush(stdin);
+	
+	scanf("%s",talk);
+	strcpy(n2.string, talk);
+	printf("%s\n",n2.string);
 	fflush(stdin);
 	
 	getchar();
