@@ -141,3 +141,76 @@ end
 |function_body |函数体|
 |result_params_comma_separated| 函数返回值，Lua语言函数可以返回多个值，每个值以逗号隔开|
 
+
+## 运算符
+
+|     Lua运算符    |      |
+|----------|---------|
+|算术运算符 |`+` `-` `*` `/` `%` `^` `- 负号`|
+|关系运算符 |`==` `~= 不等于` `>` `<` `>=` `<=`|
+|逻辑运算符|`and` `or` `not`|
+|其他运算符|`.. 连接两个字符` `# 返回字符串或表的长度`|
+
+- 代码示例 [运算符.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/运算符.lua)
+
+运算符的优先级：
+1. `^`
+2. `not`  `-(负号)`
+3. `*`  `/`
+4. `+`	`-`
+5. `..`
+6. `<` `>` `<=` `>=` `~=` `==`
+7. `and`
+8. `or`
+
+
+## 字符串
+Lua中字符串有三种表达方式：
+- 单引号间的字符串 `' '`
+- 双引号间的字符串 `" "`
+- 双中括号间的字符串 `[[ ]]`
+
+关于字符串的操作方法例如：
+
+|  用法  |   用途 |
+|--------|--------|
+|`string.upper(str)`|   字符串全部转换为大写|
+|`string.lower(str)`|字符串全部转换成小写|
+|`string.gsub(mainString,findString,replaceString,num)`|`mainString`为要替换的字符串，`findString` 为被替换的字符，`replaceString`为要替换的字符，`num`替换次数（默认全部替换)|
+|`string.find (str, substr, [init, [end]])`|在字符串`str`中搜索指定的内容`substr`,第三个参数为搜索到的第几个符合内容。返回其具体位置(首尾),不存在则返回`nil`。|
+|`string.reverse(str)`|反转字符串|
+|`string.format(...)`|返回类似C语言printf的格式化字符串|
+|`string.len(str)`|计算字符串的长度|
+|`string.rep(str,n)`|返回字符串`str`的n份拷贝|
+|`str1..str2`|连接两个字符串|
+
+- 代码示例 [字符串.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/字符串.lua)
+
+
+## 数组
+Lua的数组有**一维数组**和**二维数组**，数组的索引值可以用整数(默认从**1**开始，**负数**亦可)。
+
+```
+-- 一维数组
+array = {"First","Second"}
+```
+
+```
+-- 二维数组
+array = {}
+for i=1,3 do
+	array[i] = {}
+		for j=1,3 do
+			array[i][j] = i*j
+		end
+end
+```
+- 代码示例 [array.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/array.lua)
+
+##迭代器
+> [迭代器](https://baike.baidu.com/item/%E8%BF%AD%E4%BB%A3%E5%99%A8/3803342?fr=aladdin "迭代器")（iterator）是一种对象，它能够用来遍历标准模板库容器中的部分或全部元素，每个迭代器对象代表容器中的确定的地址。
+
+Lua中的迭代器：
+1.泛型for迭代器
+2.无状态的迭代器
+3.多状态的迭代器
