@@ -25,7 +25,7 @@ int *pointer;|声明 **"指向int的指针"**类型的变量 pointer|
 
 C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.runoob.com/cprogramming/c-data-types.html)  
 
-- 代码示例 [pointer.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/pointer.c)
+- 代码示例 [pointer.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/pointer.c)
 
 
 
@@ -33,17 +33,17 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 
 > 对指针进行加 N 运算, **地址的值**会增加当前指针所指向数据类型的长度 ✖ N
 
-- 代码示例 [pointer-calc.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/pointer_calc.c)
+- 代码示例 [pointer-calc.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/pointer_calc.c)
 
 ## 空指针 
 确保没有指向任何一个**实际的对象**或者**函数**的指针.通常使用宏定义**NULL**来表示空指针常量值.
-- 代码示例 [null_pointer.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/null_pointer.c)
+- 代码示例 [null_pointer.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/null_pointer.c)
 
 ## 指针与数组
 > 表达式中,数组可以解读成 **"指向它的初始元素的指针"**.(有例外)
 > **p[i]** 是 ***(p+i)** 的简便写法.
 
-- 代码示例 [array.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/array.c)	[array2.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/array2.c)
+- 代码示例 [array.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/array.c)	[array2.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/array2.c)
 
 **C的数组从0开始原因:**
 - 解决生活中"差1错误"问题
@@ -51,12 +51,12 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 
 > 当今的操作系统都会给应用程序的**每一个进程分配独立的** "虚拟地址空间".
 > 操作系统负责将物理内存分配给虚拟地址空间,同时还会对每一个内存区域设定"只读"或者"可读"属性.
-- 代码示例 [vmtest.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/vmtest.c)
+- 代码示例 [vmtest.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/vmtest.c)
 
 **scanf()说明**
 
 `scanf()`:连续从**流**中读入字符,对和**格式说明符相匹配的部分**进行变换处理,但是当变换失败(与格式说明符不匹配等),则**读取失败的部分**会残存在**流**中(影响其他语句的读取).
-- 代码示例 [scanf().c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/scanf().c)
+- 代码示例 [scanf().c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/scanf().c)
 
 ## 变量储存地址
 
@@ -66,12 +66,12 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 **自动变量**| 没有指定static的局部变量持有自动储存期  | 到声明该变量的语句块执行结束为止
 **malloc()**| 变量通过malloc()分配的领域 | 到free()释放为止
 
-- 代码示例 [print_address.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/print_address.c)
+- 代码示例 [print_address.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/print_address.c)
 
 ## 自动变量(栈)
 > **自动变量**重复使用内存区域,因此自动变量的**地址不是一定的**.
 
-- 代码示例 [auto.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/auto.c)
+- 代码示例 [auto.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/auto.c)
 
 > 大部分CPU中已经嵌入**栈**的功能,C语言通常直接使用.
 > C语言中,通常将自动变量1保存在**栈**中.
@@ -85,7 +85,7 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 - 在标准C库中，提供了`malloc/free`函数分配释放内存，这两个函数底层是由brk，mmap，munmap这些系统调用实现的,但他们不是系统调用,是标准库函数.
 
  可能调用 `free()` 后,**对应的内存区域不会立即返还给操作系统**,因为可能有2个指针(A与B)在引用当前区域的情况出现,使用指针A引用的区域后仓促调用 `free()` ,指针B引用的内存区域也不会立即破坏,暂时保留以前的值,**直到某个地方执行 `malloc()`** ,随着当前内存区域被重新分配,内容才开始被破坏.
-- 代码示例 [free.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/free.c)
+- 代码示例 [free.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/free.c)
 
 > 碎片化 : 内存被零零散散分割,出现较多无法利用的细碎空块.
 > 使用 `malloc()` 的内存管理过程,可能引发碎片化
@@ -94,21 +94,21 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 - 声明: `void *realloc(void *ptr, size_t size)`
 - 功能: 尝试重新调整之前调用 `malloc` 或 `calloc` 所分配的 `ptr` 所指向的内存块的大小,即**扩展内存区域**. 如果通过`ptr`传递的区域后面有足够大小的空闲空间,则直接实施内存区域扩展. 若没有足够多的区域,则**分配其他新空间**,然后将内容**复制**过去.
 - `realloc`同样可能引发**碎片化**,但相比`malloc`较为缓和,但要是用在**扩展较大的内存区域**,除了复制耗时,也会造成堆中大量的空间过分活跃,此时应该积极使用**链表**.
-- 代码示例 [realloc.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/realloc.c)
+- 代码示例 [realloc.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/realloc.c)
 
 ## 布局内存对齐
 
 根据硬件(**CPU**)的特征,对于不同数据类型的可配置地址受到一定的限制.
 
 为了**提高CPU的效率**,**编译器**会适当地进行 **边界调整(布局对齐)** ,在结构体中插入合适的**填充物**(也就是再添加适当大小的储存空间). 但即便使用手工进行布局对其,也不能提高可移植性.
-- 代码示例 [alignment.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/alignment.c)
+- 代码示例 [alignment.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/alignment.c)
 
 ## 字节序
 
 [字节序](https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E5%BA%8F/1457160)，即**字节在电脑中存放时的序列**与输入（输出）时的序列是先到的在前还是后到的在前.
 
 字节排序分为**大端字节序**和**小端字节序**. 说明见代码
-- 代码示例 [byteorder.c](https://github.com/SouthBegonia/Codes_2018/blob/master/C_pointer/byteorder.c)
+- 代码示例 [byteorder.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/byteorder.c)
 - 无论是整数还是浮点数,内存上的表现形式都随环境(CPU)的不同而不同.
 
 ![字节排序](https://i.imgur.com/N2eJ7hQ.png)
