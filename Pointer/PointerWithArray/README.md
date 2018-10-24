@@ -41,20 +41,21 @@ int (*p)[4];
 p = array;
 ```
 
-** p 与 p+1 与 ++p**：`p` 是一个int型数组(长度4)的指针，`p+1` 是另一个int型数组(长度为4)的指针，通过一个 `p` 可以读取 `array[]` 的内容，`++p`同理
+**`p` 与 `p+1` 与 `++p`**：`p` 是一个int型数组(长度4)的指针，`p+1` 是另一个int型数组(长度为4)的指针，通过一个 `p` 可以读取 `array[]` 的内容，`++p`同理
 ![](https://i.imgur.com/nEObzYh.jpg)
 
-** p 读取 array[0]**：当数据类型匹配时，可以理解为 `*p` 内的 `*p+0,*p+1,*p+2,*p+3` 对应读取`array[0][1],array[2]...`
+**`p` 读取 `array[0]`**：当数据类型匹配时，可以理解为 `*p` 内的 `*p+0,*p+1,*p+2,*p+3` 对应读取`array[0][1],array[2]...`
 ![](https://i.imgur.com/8yxHeen.jpg)
 
-** p+1读取 array[1]**：当数类型匹配时，同理读取 `array[1]`的内容
+**`p+1`读取 `array[1]`**：当数类型匹配时，同理读取 `array[1]`的内容
 ![](https://i.imgur.com/V6pYYdQ.jpg)
 
-**当 *p 与 array[]数据类型不匹配**：即`array[3][4]` 与 `(*p)[5]`，因为`*p`为5个int的数组，在`p`读取`array[0]`时，`*p+4` 占据了 `array[1][0]`，在`p+1`读取`array[1]`时，则从`array[1][1]`开始读取，产生其他结果，但这并不算错误，而是警告`[Warning] assignment from incompatible pointer type [-Wincompatible-pointer-types]`。同理，当`*p`内元素少于数组，则提前读取
+**当 `*p` 与 `array[]`数据类型不匹配**：即`array[3][4]` 与 `(*p)[5]`，因为`*p`为5个int的数组，在`p`读取`array[0]`时，`*p+4` 占据了 `array[1][0]`，在`p+1`读取`array[1]`时，则从`array[1][1]`开始读取，产生其他结果，但这并不算错误，而是警告`[Warning] assignment from incompatible pointer type [-Wincompatible-pointer-types]`。同理，当`*p`内元素少于数组，则提前读取
 ![](https://i.imgur.com/WzERE64.jpg)
 
 **总结(前提为数据类型匹配)**：
 - `p+i 与 *p+i`：一个指向第二数组首位元素，一个指向第一数组的第`i`个元素
 - `*p[n] 与 (*p)[n]`：优先级`() > [] > *`，一个是`p[n][0]/array[n][0]`，一个为`p[0][n]/array[0][n]`
 
-代码示例：
+代码示例：[数组指针.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/PointerWithArray/%E6%95%B0%E7%BB%84%E6%8C%87%E9%92%88.c)
+
