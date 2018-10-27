@@ -84,3 +84,4 @@ char *p2[Len];
 ![](https://i.imgur.com/wWUsSh2.jpg)
 
 - 补充：字符串以转义字符 `\0` 填充，`var` 内的剩余空间亦是
+- 代码示例：[指针数组.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/PointerWithArray/%E6%8C%87%E9%92%88%E6%95%B0%E7%BB%84.c)
