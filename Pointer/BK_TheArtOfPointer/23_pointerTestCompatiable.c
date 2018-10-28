@@ -1,48 +1,54 @@
-/*å…³äºæ•°ç»„æŒ‡é’ˆ*/
+/*Êı×éÖ¸Õë*/
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int *(pa)[3];   //æ•°ç»„æŒ‡é’ˆ
-    int arr1[2][3]={1,2,3,4,5,6};
+    int (*p)[3];   //Êı×éÖ¸Õë
+    int array[2][3]={
+	{1,2,3},
+	{4,5,6}};
     int i,j;
 
-    /*æ‰“å°arr1ä¿¡æ¯*/
+    /*´òÓ¡¶şÎ¬Êı×é array */
     for(i=0;i<2;i++)
     {
         for(j=0;j<3;j++)
-            printf("arr1[%d][%d]=%2d %p  |",i,j,arr1[i][j],&arr1[i][j]);
-        printf("\n");
+            printf("array[%d][%d]=%2d  ADS = %p\n",i,j,array[i][j],&array[i][j]);
     }
     printf("\n");
 
 
-	/*æ•°ç»„æŒ‡é’ˆåŸåœ°å€*/
-	printf("æœªèµ‹å€ï¼š\n");
+	/* Î´¸øÊı×éÖ¸Õëp¸³Öµ
+	p Ö¸ÏòµÄÄ¬ÈÏÊı×é´óĞ¡Îª 4x3 =12
+	ÒòÎªÎ´³õÊ¼»¯£¬ËùÒÔ p[i] ÄÚÔİÊ±Ã»ÓĞÊµ¼ÊÖµ*/
+	printf("Î´³õÊ¼»¯µÄÊı×éÖ¸Õë p£º\n");
 	for(i=0;i<3;i++)
-		printf("pa[%d]  =%p  ",i,(*pa)++);
+		printf("*p+%d = %p   *(p+%d) = %d\n",i,*p+i,i,*(*p+i));
 	printf("\n\n");
 
-	/*èµ‹å€*/
-    *pa=(int *)arr1;   //*pa=arr1 æˆ– pa[]=arr1 ä¸”éœ€è¦æ˜¾ç¤ºè½¬æ¢
-	printf("è¿›è¡Œ*pa=(int *)arr1åï¼š\n");
+
+	/* p Ö¸Ïò array £¬´òÓ¡array[0]ĞĞÄÚÈİ */
+    p = array;
+	printf("*p = array ºó:\n");
 	for(i=0;i<3;i++)
-		printf("pa[%d]  =%p  ",i,(*pa)++);
+		printf("*p+%d = %p    *(*p+%d) = %d    (*p)[%d] = %d\n",i,*p+i,i,*(*p+i),i,(*p)[i]);
 	printf("\n\n");
 
-	/*èµ‹å€*/
-    *pa=(int *)arr1;
-    printf("å†è¡Œ*pa=(int *)arr1åï¼š\n");
-    for(i=0;i<3;i++)
-		printf("*pa[%d]=%d  ",i,*((*pa)++));
+
+    /* Í¨¹ı *(p+i) ¶ÁÈ¡ array[i]ĞĞÄÚÈİ */
+	p = array;
+	printf("´òÓ¡array[i]ĞĞÄÚÈİ£º\n");
+	for(int j=0;j<2;j++)
+	for(i=0;i<3;i++)
+		printf("(*p+%d)+%d = %p   *(*(p+%d)+%d) = %2d\n",j,i,*(p+j)+i,j,i,*(*(p+j)+i));
     printf("\n\n");
 
-	/*èµ‹å€*/
-    *pa=(int*)arr1;
-    printf("å†è¡Œ*pa=(int *)arr1åï¼š\n");
-    printf("  pa=%p    arr1=%p\n",pa,arr1);
-	printf(" *pa=%p   *arr1=%p\n",*pa,*arr1);
-	printf("**pa=%p  **arr1=%p\n",**pa,**arr1);
+
+	/*ÆäËû*/
+    p= array;
+    printf("  p=%p    array=%p\n",p,array);
+	printf(" *p=%p   *array=%p\n",*p,*array);
+	printf("**p=%p  **array=%p\n",**p,**array);
 
     getchar();
 	return 0;
