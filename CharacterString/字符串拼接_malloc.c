@@ -1,29 +1,28 @@
-/*æ¼”ç¤ºå­—ç¬¦ä¸²æ‹¼æ¥çš„æ“ä½œ
-æ–¹æ³•ï¼šå¦åˆ›å»ºåŠ¨æ€å†…å­˜å¹¶åˆ†é…åˆé€‚å¤§å°è¿›è¡Œæ‹¼æ¥ï¼Œä¸å¯åœ¨å­—ç¬¦ä¸²å­—é¢é‡æ± è¿›è¡Œæ‹¼æ¥*/
+/*½øĞĞ×Ö·û´®²Ù×÷Ê±¾¡Á¿mallocÁí´´½¨¿Õ¼ä½øĞĞ²Ù×÷£¬¶ø²»ÊÇÔÚ×Ö·û´®ÃæÁ¿³ØÀïÃæ½øĞĞ²Ù×÷*/
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
 
 int main()
 {
-    /*æ­£ç¡®æ‹¼æ¥*/
-    char *error = "ERROR:";     //å‰ç¼€
-    char *errorMessage = "Not enough memory";   //åç¼€
-    char *buffer = (char *)malloc(strlen(error)+strlen(errorMessage)+1);    //ç”³è¯·åŠ¨æ€å†…å­˜ buffer
-    strcpy(buffer,error);   //å¤åˆ¶ error åˆ° buffer
-    strcat(buffer,errorMessage);    //è¿æ¥errorMessage åˆ° bufferæœ«å°¾
+  
+    char *error = "ERROR:";    
+    char *errorMessage = "Not enough memory";   
+    char *buffer = (char *)malloc(strlen(error)+strlen(errorMessage)+1);   //Áí´´½¨¿Õ¼ä½øĞĞ×Ö·û´®²Ù×÷
+    strcpy(buffer,error);   
+    strcat(buffer,errorMessage);    
 
     printf("%s\n",buffer);
     printf("%s\n",error);
     printf("%s\n",errorMessage);
     free(buffer);
-    /*æ­£ç¡®æ‰“å°ï¼š
+    /*ÕıÈ·´òÓ¡
     ERROR: Not enough memory
     Not enough memory
     */
 
 
-    /*é”™è¯¯äº‹ä¾‹ï¼šä¸å¦åˆ›å»ºåŠ¨æ€å†…å­˜è€Œæ˜¯åœ¨å­—ç¬¦ä¸²å­—é¢é‡æ± ä¸Šè¿›è¡Œæ‹¼æ¥ï¼Œä¼šå¯¼è‡´è¦†å†™é”™è¯¯
+    /* ÔÚ×Ö·û´®ÃæÁ¿³ØÄÚ¸²Ğ´Ôì³ÉµÄ´íÎó´úÂëÊÂÀı
     char *error_mistake = "ERROR:";
     char *errorMessage_mistake = "Not enough memory";
     strcat(error_mistake,errorMessage_mistake);
@@ -31,9 +30,10 @@ int main()
     printf("%s\n",error_mistake);
     printf("%s\n",errorMessage_mistake);
 
-    é”™è¯¯æ‰“å°ï¼š
+    ´íÎó´òÓ¡£º
     ERROR: Not enough memory
     ot enough memory
     */
+    getchar();
     return 0;
 }
