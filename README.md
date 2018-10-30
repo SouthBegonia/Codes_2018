@@ -7,7 +7,6 @@
 - Sorting
 - Others
 - C_pointer
-- 2048
 - 头文件和源文件关系
 - 结构体
 
@@ -20,6 +19,10 @@
 - 最短路径
 - 树
 - BK_明解C语言
+- 
+## 小程序
+- 2048
+- PlaneWar
 
 ## Sublime Text3
 - Lua
