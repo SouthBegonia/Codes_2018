@@ -1,7 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(plane.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
-  PlaneWars.c
-c:\users\king\desktop\planewars\plane\planewars.c(210): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
-  c:\users\king\desktop\planewars\plane\planewars.c(210): note: 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
-  c:\users\king\desktop\planewars\plane\planewars.c(210): note: 缺失的可变参数 2 为格式字符串“%c”所需
-  c:\users\king\desktop\planewars\plane\planewars.c(210): note: 此参数用作缓冲区大小
-  plane.vcxproj -> C:\Users\King\Desktop\PlaneWars\Debug\PlaneWars.exe
