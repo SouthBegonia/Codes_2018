@@ -172,3 +172,9 @@ void regist_book(struct Books const *book_data)
 ```
 因为使用了`const`所以`book_data`所指向的对象是**禁止改写**的,但`book_data->title`所指向的内容是可以被改写的.
 这种情况是因为由于`const`而成"只读"对象是 **"`book_data`所指向的对象自身"** ,而不包括 **"`book_data`所指向的对象再向前追溯到的对象"** 即结构体内的`title`所指向的对象.解决办法为`char const *title`
+
+
+## 指针常量与指针变量
+
+## 数组指针和指针数组
+[数组指针与指针数组](https://github.com/SouthBegonia/Codes_2018/tree/master/Pointer/PointerWithArray)
