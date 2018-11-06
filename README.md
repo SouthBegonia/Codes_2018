@@ -21,8 +21,9 @@
 - BK_明解C语言
 - 
 ## 小程序
-- 2048
-- PlaneWar
+- [2048](https://github.com/SouthBegonia/Codes_2018/tree/master/2048)
+- 飞机大战：[PlaneWar](https://github.com/SouthBegonia/Codes_2018/tree/master/PlaneWars)
+- 三字棋：[ThreeChess](https://github.com/SouthBegonia/Codes_2018/tree/master/ThreeChess)
 
 ## Sublime Text3
 - Lua
