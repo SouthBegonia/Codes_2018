@@ -53,10 +53,6 @@ C语言的数据类型参考:[C 数据类型-菜鸟教程](http://http://www.run
 > 操作系统负责将物理内存分配给虚拟地址空间,同时还会对每一个内存区域设定"只读"或者"可读"属性.
 - 代码示例 [vmtest.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/vmtest.c)
 
-**scanf()说明**
-
-`scanf()`:连续从**流**中读入字符,对和**格式说明符相匹配的部分**进行变换处理,但是当变换失败(与格式说明符不匹配等),则**读取失败的部分**会残存在**流**中(影响其他语句的读取).
-- 代码示例 [scanf().c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/scanf().c)
 
 ## 变量储存地址
 

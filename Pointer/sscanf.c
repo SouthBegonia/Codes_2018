@@ -1,0 +1,18 @@
+/*sscanf()*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+   int day, year;
+   char weekday[10], month[10], dtm[100];
+
+   strcpy( dtm, "Sunday May 13 2018" );
+   sscanf( dtm, "%s %s %d %d", weekday, month, &day, &year );
+
+   printf("%s %d, %d = %s\n", month, day, year, weekday );
+   
+   getchar();
+   return 0;
+}
