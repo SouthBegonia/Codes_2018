@@ -41,7 +41,7 @@ Man jack;		//声明结构变量 jack
 
 ## 访问结构体成员
 
-1.访问普通结构体的成员，采用 **结构变量名.结构体成员** 访问
+1.访问**普通**结构体的成员，采用 ` . ` 访问
 ```
 typedef struct {
 	int days;
@@ -52,12 +52,13 @@ int main()
 {
 	int days;
 	char place[100];
-	Party li;
+	Party li;		//普通结构体
+	Party *p = &li;		//指针指向的结构体
 
 	li.days = 12;
 	strcpy(li.place,"Home");
 	
-	printf("days = %d\n",li.days);
+	printf("days = %d\n",li.days);		//访问结构体成员
 	printf("place = %s\n",li.place);
 	
 	return 0;
@@ -65,4 +66,31 @@ int main()
 
 ```
 
-2.访问指针所指向的结构体成员，采用 **结构变量名->结构体成员** 访问
+2.访问**指针**所指向的结构体成员，可采用 `->` 或 ` (* ).` 访问
+```
+/* 方法1 */
+printf("days = %d\n",ptr->days);
+printf("place = %s\n",ptr->place);
+
+/* 方法2 */
+printf("days = %d\n",(*ptr).days);
+printf("place = %s\n",(*ptr).place);
+```
+
+## 其他说明
+1.区别**结构体常量**及**结构体变量**
+```
+struct Student {
+	char name[20];
+	int score;
+};
+
+/*创建结构体常量
+可以直接使用，访问成员*/
+struct Student stu;
+
+/*创建结构体变量
+除非指向其他结构体，否则需要分配内存才可使用*/
+struct Student *pstu;
+
+```
