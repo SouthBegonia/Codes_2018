@@ -28,3 +28,8 @@
 - 代码示例：[vmtest.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/vmtest.c)，[sscanf.c](https://github.com/SouthBegonia/Codes_2018/blob/master/Pointer/sscanf.c)
 
 
+## fprintf()
+- 声明：`int fprintf(FILE *stream, const char *format, ...)`
+- 功能：发送格式化输出到**流 stream** 中
+
+
