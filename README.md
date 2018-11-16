@@ -29,7 +29,7 @@
 [Lua](https://github.com/SouthBegonia/Codes_2018/tree/master/Lua)
 
 # Unity3d
-[unity3d](https://github.com/SouthBegonia/Codes_2018/tree/master/unity3d)
+[unity3d](https://github.com/SouthBegonia/Codes_2018/tree/master/Unity3d)
 
 # 其他
 - C库函数：[LibraryFunction](https://github.com/SouthBegonia/Codes_2018/tree/master/LibraryFunction)

@@ -1,6 +1,19 @@
-## 碰撞体调试(检测)：
+## 调试：
+在某函数内进行`Debug.Log(...)`可实现调试检测，例如：
 ```
-Debug.Log( ... )
+public class Player : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+        Debug.Log("Hello");
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		Debug.Log(" World");
+	}
+}
+//在控制台查看调试信息
 ```
 
 ## 获取碰撞体信息：
