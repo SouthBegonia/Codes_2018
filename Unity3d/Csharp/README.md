@@ -1,16 +1,29 @@
 # C#在Unity3d的应用
-参考书籍：《Unity5.x 从入门到精通》
+参考：
+- 《Unity5.x 从入门到精通》
+- [siki学院 - Unity中的C#编程](http://www.sikiedu.com/my/course/83)
+- [菜鸟教程 - C#教程](http://www.runoob.com/csharp/csharp-tutorial.html)
 -----------------
 
 # C#基本语法
 前提：
+- 环境：VS2017
 - 脚本默认绑定在空的 **GameObject** 下
-- 保留核心代码，原代码见对应文件
+- 保留核心代码，省略命名空间(特殊情况有备注)，原代码见对应文件
+
+
+## 命名空间
+C#文件头部 `using` 开头的代码即为命名空间，例如
 ```
-//部分省略内容
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+```
+
+## 类
+脚本名必须与类名保持一致，例如文件名 *Player.cs*，则代码有：
+```
+public class Player : MonoBehaviour { }
 ```
 
 ## 变量
