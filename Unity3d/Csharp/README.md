@@ -8,7 +8,7 @@
 # C#基本语法
 前提：
 - 环境：VS2017
-- 脚本默认绑定在空的 **GameObject** 下
+- 脚本默认绑定在空的游戏对象 **Player** 下
 - 保留核心代码，省略命名空间(特殊情况有备注)，原代码见对应文件
 
 
@@ -21,9 +21,9 @@ using UnityEngine;
 ```
 
 ## 类
-脚本名必须与类名保持一致，例如文件名 *Player.cs*，则代码有：
+脚本名必须与类名保持一致，例如文件名 *Players.cs*，则代码有：
 ```
-public class Player : MonoBehaviour { }
+public class Players : MonoBehaviour { }
 ```
 
 ## 变量
@@ -214,9 +214,47 @@ public class CSharpOut : MonoBehaviour {
 ```
 ![](https://i.imgur.com/goHgPIY.png)
 
-
 ## C#脚本
 1. 凡是需要添加到游戏对象的C#脚本类都需要直接或间接地从MonoBehaviour类继承。
 2. 使用`Start` 或者 `Awake` 函数来初始化，避免使用构造函数。原因在于Unity无法确定构造函数何时被调用。
 3. 类名要与脚本名相同。如脚本名 *CSharpArray.cs* ，则代码内的类为 `public class CSharpArray : MonoBehaviour { }`
 4. 协同函数(`Coroutines`)返回类型必须是`IEnumerator`,并用`yield return` 代替 `yield`
+
+---------------------------
+
+# 访问游戏对象和组件
+## MonoBehaviour类
+> Unity 中的脚本都是继承自 MonoBehaviour，它定义了基本的脚本行为。
+
+|事件响应函数|说明|
+|---|---|
+|`OnTriggerEnter /Stay /Exit`|当其他碰撞体进入 /停留 /离开触发器时调用|
+|`OnCollisionEnter /Stay /Exit`|当碰撞体或刚体与其他碰撞体或刚体接触 / 保持接触 /停止接触时调用|
+
+## 访问游戏对象
+
+1. 通过名字查找
+	- `GameObject.Find()`:若找到对应对象返回该对象的引用，失败则返回空值null，若存在多个重名对象则返回第一个对象的引用。
+```
+//游戏对象 Cube
+GameObject player;
+void Start() {
+	player = GameObject.Find("Cube");
+}
+```
+2. 通过标签查找
+	- `GameObject.FindWithTag()`
+```
+//游戏对象 Cube 的标签 Enemy
+GameObject player;
+void Start() {
+	player = GameObject.FindWithTag("Enemy");
+```
+
+## 访问组件
+`GetComponent<>()`：得到对象上的组件，不存在则返回null
+```
+Transform t;	//声明组件变量
+t = GetComponent<Transform>();	//得到对象上的Transform组件
+t = DoSomething;	//访问组件变量
+```
