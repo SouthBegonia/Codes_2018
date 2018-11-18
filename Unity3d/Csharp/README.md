@@ -254,7 +254,96 @@ void Start() {
 ## 访问组件
 `GetComponent<>()`：得到对象上的组件，不存在则返回null
 ```
+//继上文得到游戏对象 Player(含Transform组件和Example脚本组件) 后
 Transform t;	//声明组件变量
+Example script;
 t = GetComponent<Transform>();	//得到对象上的Transform组件
 t = DoSomething;	//访问组件变量
+script  =GetComponent<Example>();	//得到对象上的Example脚本组件
 ```
+设置变量为 public 后：
+![](https://i.imgur.com/hpz8gcp.png)
+
+
+---------------
+# 常用脚本API
+## TransForm组件
+> Transform组件控制游戏对象在Unity场景中的位置、旋转和大小比例，每个游戏对象都包含此组件。
+
+
+|成员函数|功能|
+|----|----|
+|Translate|按指定的方向和距离平移|
+|Rotate|按指定的欧拉角旋转|
+|RotateAround|按给定的旋转轴和旋转角进行旋转|
+
+```
+//方块向z轴平移
+void Update() {
+	float speed = 2.0f;
+	transform.Translate(Vector3.forward * Time.deltaTime * speed);
+}
+
+//方块绕Y轴自转
+transform.Rotate(Vector3.up * Time.deltaTime * speed);
+
+//方块绕世界坐标的Y轴公转
+transform.RotateAround(Vector3.zero, Vector3.up, speed * Time.deltaTime);
+```
+
+
+## Time组件
+> Unity中通过Time类来获取和时间相关的信息，可以用来计算帧速率、调整时间流逝速度等功能
+
+
+|成员变量|功能|
+|----|----|
+|time|游戏从开始到现在经历的时间(秒)(只读)|
+|deltaTime|上一帧消耗的时间(秒)(只读)|
+
+## Random类
+> Random类可以用来生成随机数
+
+|成员函数|功能|
+|----|----|
+|Range|返回min和max之间的一个随机浮点数，包含min和max|
+```
+//设定随机数(全为float)
+num = Random.Range(Min, Max);
+
+//随机载入不同的游戏场景
+void Example() {
+	Application.LoadLevel(Random.Range(0,Application.LevelCount));
+}
+```
+
+## Mathf类
+> Unity中的Mathf类提供了复杂数学公式额解决方法
+
+|变量|说明|
+|----|----|
+|PI|圆周率(只读)|
+|Infinity|正无穷大(只读)|
+|NegativeInfinity|负无穷大(只读)|
+|Sin,Cos,Tan|计算正弦，余弦，正切值(弧度制)|
+|Sqrt|计算平方根|
+|Abs|计算绝对值|
+|Min,Max|返回若干数值中的最小值，最大值|
+
+```
+//Mathf.SmoothDamp函数可以制作相机的缓冲跟踪效果：将脚本绑定在相机上，指定target
+public class SmoothDamp : MonoBehaviour {
+    public Transform target;
+    public float smoothTime = 0.3F;
+    private float yVelocity = 0.0F;
+	
+	void Update () {
+        float newPosition = Mathf.SmoothDamp(transform.position.y, target.position.y, ref yVelocity, smoothTime);
+        transform.position = new Vector3(transform.position.x, newPosition, transform.position.z);
+
+	}
+```
+
+## Coroutine协同程序
+> Coroutine 也称为协同程序或者协程，协同程序可以和主程序并行运行，和多线程类似。
+
