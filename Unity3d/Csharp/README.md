@@ -344,6 +344,17 @@ public class SmoothDamp : MonoBehaviour {
 	}
 ```
 
+## Input类
+> Input类是处理输入的接口
+
+|成员函数|功能|
+|----|----|
+|GetMouseButton|指定的鼠标按键是否按下|
+|GetMouseButtonDown/Up|指定的鼠标按键被按下/松开的那一帧返回true|
+|GetKey|当指定的按键被按下时放回true|
+|GetKeyDown/Up|当指定的按键被按下/松开的那帧返回true|
+
+
 ## Coroutine协同程序
 > Coroutine 也称为协同程序或者协程，协同程序可以和主程序并行运行，和多线程类似。
 
