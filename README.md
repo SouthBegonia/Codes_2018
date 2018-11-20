@@ -10,7 +10,7 @@
 - 头文件和源文件关系
 - 结构体
 
-## VS2017工程文件：
+## C语言工程文件：
 - 排序
 - 数据结构
 - 枚举
@@ -25,7 +25,7 @@
 - 飞机大战：[PlaneWar](https://github.com/SouthBegonia/Codes_2018/tree/master/PlaneWars)
 - 三字棋：[ThreeChess](https://github.com/SouthBegonia/Codes_2018/tree/master/ThreeChess)
 
-# Sublime Text3
+# Lua
 [Lua](https://github.com/SouthBegonia/Codes_2018/tree/master/Lua)
 
 # Unity3d

@@ -1,16 +1,18 @@
 # Lua学习
 [Lua](https://baike.baidu.com/item/lua/7570719?fr=aladdin)：是一个小巧的**脚本语言**，其设计目的是为了**嵌入应用程序中**，从而为应用程序提供灵活的扩展和定制功能。Lua由标准C编写而成，几乎在所有操作系统和平台上都可以编译，运行。
 
-特性：
-- 轻量级：轻量级Lua语言的官方版本只包括一个精简的核心和最基本的库
-- 可扩展性
+- 特点：
+ - 轻量级：轻量级Lua语言的官方版本只包括一个精简的核心和最基本的库
+ - 可扩展性
 
-环境 ：Lua5.1.0 / Sublime Text3
+- 开发环境 ：Lua5.1 ，Sublime Text3 / SciTE
+- 学习资料：
+ - [Lua教程 - 菜鸟教程](http://www.runoob.com/lua/lua-tutorial.html)
+ - [Lua编程 - SiKi学院](http://www.sikiedu.com/my/course/75) 
 
 ## 基本语法
-Lua代码存储在名为 xxxx.lua 的脚本文件内。
 
-**简单打印：**
+**打印：**
 ```
 print("Hello World！")
 ```
@@ -37,6 +39,7 @@ print("Hello World！")
 |return  |then  |true  |until |
 |while   |
 
+
 ## 数据类型
 > Lua是动态类型语言，变量不要类型定义,只需要为变量赋值
 
@@ -52,6 +55,14 @@ print("Hello World！")
 |table	 |Lua 中的表（table）其实是一个"关联数组"（associative arrays），数组的索引可以是数字或者是字符串。在 Lua 里，table 的创建是通过"构造表达式"来完成，最简单构造表达式是{}，用来创建一个空表|
 
 - 代码示例 [数据类型.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/数据类型.lua)
+
+## 变量
+> Lua中创建的变量默认为全局变量，默认值为 nil
+
+- 创建全局变量：`variable = 5`
+- 创建局部变量：`local variable2 = 10`
+
+
 
 ## 循环
 **While 循环**
