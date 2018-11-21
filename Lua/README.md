@@ -218,7 +218,25 @@ end
 ```
 - 代码示例 [array.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/array.lua)
 
-##迭代器
+
+## 表 table
+> tableName 是 Lua 的一种数据结构用来帮助我们创建不同的数据类型，很类似于数组
+
+1. 表的创建
+```
+字符串为索引：tableName1 = {key1 = "hello",key2 = "world" ...}
+数字为索引：  tableName2 ={}
+			   tableName2[1], tableName2[2], ... = 10, 20, ...
+			   tableName3 = {"South","Begonia","Hi","Friend"}
+```
+	- `tableName` ：构建的表的名字 
+	- `key1,key2...` ：表内元素的索引，或称键，可为任意数据类型。当索引为字符串时(key1,key2等)，省略其双引号。若不另设索引，默认为从1开始的索引
+
+2. 表的读取
+	- 索引为字符串时： `print(tableName.key1,tableName.key2)` 或 `print(tableName["key1"],tableName["key2"])`
+	- 索引为数字时：`print(tableName[1],tableName[2])`
+
+## 迭代器
 > [迭代器](https://baike.baidu.com/item/%E8%BF%AD%E4%BB%A3%E5%99%A8/3803342?fr=aladdin "迭代器")（iterator）是一种对象，它能够用来遍历标准模板库容器中的部分或全部元素，每个迭代器对象代表容器中的确定的地址。
 
 Lua中的迭代器：
