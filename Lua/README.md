@@ -144,23 +144,24 @@ optional_function_scope  function function_name( argument1, argument2, argument3
 end
 ```
 
-|          |         |
-|----------|---------|
-| optional_function_scope | 可选的制定函数是全局函数还是局部函数，未设置该参数默认为全局函数 |
-| function_name |指定函数名称 |
-|argument1, argument2, argument3..., argumentn| 函数的参数，多个参数用逗号隔开，也可以不带参数|
-|function_body |函数体|
-|result_params_comma_separated| 函数返回值，Lua语言函数可以返回多个值，每个值以逗号隔开|
+- `optional_function_scope` : 可选的制定函数是全局函数还是局部函数，未设置该参数默认为全局函数
+- `function_name`：指定函数名称
+- `argument1, argument2, argument3..., argumentn`：函数的参数，多个参数用逗号隔开，也可以不带参数，且参数的类型不限，也可以传递函数
+- `function_body`：函数体
+- `result_params_comma_separated`：函数返回值，Lua语言函数可以返回多个值，每个值以逗号隔开
 
 
 ## 运算符
 
-|     Lua运算符    |      |
+|     Lua运算符(功能参考C语言)    |     表示 |
 |----------|---------|
 |算术运算符 |`+` `-` `*` `/` `%` `^` `- 负号`|
 |关系运算符 |`==` `~= 不等于` `>` `<` `>=` `<=`|
 |逻辑运算符|`and` `or` `not`|
-|其他运算符|`.. 连接两个字符` `# 返回字符串或表的长度`|
+
+- 其他运算符：
+	- `..` ：在print()内连接两个字符，例如`print("Number is" .. number)`，此表示方法与`print("Number is",number)`表示区别在于没有间隔，而`,`表示间隔较大(一制表符？)
+	- `#`：返回**字符串**或**表**的长度，例如`print(#table)`
 
 - 代码示例 [运算符.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/运算符.lua)
 
