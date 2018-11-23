@@ -150,6 +150,16 @@ end
 - `function_body`：函数体
 - `result_params_comma_separated`：函数返回值，Lua语言函数可以返回多个值，每个值以逗号隔开
 
+**匿名函数**：只调用一次的无名函数，常作为参数被其他函数调用
+```
+-- 一个main函数，被传入val参数及一个匿名函数
+function main(val,
+	function (..)
+		-- body
+	end
+)
+```
+
 
 ## 运算符
 
