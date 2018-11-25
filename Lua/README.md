@@ -57,10 +57,14 @@ print("Hello World！")
 - 代码示例 [数据类型.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/数据类型.lua)
 
 ## 变量
-> Lua中创建的变量默认为全局变量，默认值为 nil
+> Lua中创建的变量默认为全局变量，初始值默认值为 nil
 
-- 创建全局变量：`variable = 5`
-- 创建局部变量：`local variable2 = 10`
+- 全局变量
+	- 创建：函数内外均可，例如`variable = 5`
+	- 生命周期：程序结束
+- 局部变量
+	- 创建：在函数内`local variable2 = 10`，表示局部变量在目标函数开始时创建，在结束时被销毁
+	- 生命周期：目标函数期间
 
 
 
