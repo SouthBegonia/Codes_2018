@@ -139,9 +139,10 @@ end
 ```
 - 代码示例 [流程控制.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/流程控制.lua)
 
+
 ## 函数
-函数定义格式：
 ```
+-- 函数基本结构
 optional_function_scope  function function_name( argument1, argument2, argument3..., argumentn)
     function_body
     return result_params_comma_separated
@@ -162,6 +163,43 @@ function main(val,
 		-- body
 	end
 )
+```
+
+**函数返回多值**：要求接受返回值的数目匹配
+```
+function temp()
+	return 1,2,3,4,5
+end
+
+res1, res2,res3,res4,res5 = temp()	--接收数目与返回数目匹配
+print(res1,res2,res3,res4,res5)
+```
+
+**可变参数**：
+```
+function add( ... )
+	local s = 0
+	for i,v in ipairs{...}  do
+		s = s + v
+	end
+	return s
+end
+print(add(1,2,3,4))
+```
+
+**获取可变参数的参数个数**
+```
+-- 获取可变参数的数量：select("#",...)
+function average( ... )
+	local result = 0
+	local  arg = {...}	--arg为表
+	for i,v in ipairs(arg)  do
+		result = result + v
+	end
+	print("总共传入" .. select("#", ...) .. "个数")
+	return result/select("#", ...)
+end
+print("平均值为" .. average2(1,2,3,4,5,6,7))
 ```
 
 
