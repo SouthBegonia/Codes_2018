@@ -2,13 +2,12 @@
 [Lua](https://baike.baidu.com/item/lua/7570719?fr=aladdin)：是一个小巧的**脚本语言**，其设计目的是为了**嵌入应用程序中**，从而为应用程序提供灵活的扩展和定制功能。Lua由标准C编写而成，几乎在所有操作系统和平台上都可以编译，运行。
 
 - 特点：
- - 轻量级：轻量级Lua语言的官方版本只包括一个精简的核心和最基本的库
- - 可扩展性
-
+	- 轻量级：轻量级Lua语言的官方版本只包括一个精简的核心和最基本的库
+	- 可扩展性
 - 开发环境 ：Lua5.1 ，Sublime Text3 / SciTE
 - 学习资料：
- - [Lua教程 - 菜鸟教程](http://www.runoob.com/lua/lua-tutorial.html)
- - [Lua编程 - SiKi学院](http://www.sikiedu.com/my/course/75) 
+	- [Lua教程 - 菜鸟教程](http://www.runoob.com/lua/lua-tutorial.html)
+	- [Lua编程 - SiKi学院](http://www.sikiedu.com/my/course/75) 
 
 ## 基本语法
 
@@ -213,7 +212,7 @@ print("平均值为" .. average2(1,2,3,4,5,6,7))
 
 - 其他运算符：
 	- `..` ：在print()内连接两个字符，例如`print("Number is" .. number)`，此表示方法与`print("Number is",number)`表示区别在于没有间隔，而`,`表示间隔较大(一制表符？)
-	- `#`：返回**字符串**或**表**的长度，例如`print(#table)`
+	- `#`：返回**字符串**或**表**的长度，例如`print(#table)`，但表的索引需为自然数(operator.lua)
 
 - 代码示例 [运算符.lua](https://github.com/SouthBegonia/Codes_2018/blob/master/Lua/运算符.lua)
 
