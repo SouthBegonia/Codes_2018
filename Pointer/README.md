@@ -173,4 +173,4 @@ void regist_book(struct Books const *book_data)
 ## 指针常量与指针变量
 
 ## 数组指针和指针数组
-[数组指针与指针数组](https://github.com/SouthBegonia/Codes_2018/tree/master/Pointer/PointerWithArray)
+详见：[数组指针与指针数组](https://github.com/SouthBegonia/Codes_2018/tree/master/Pointer/PointerWithArray)
