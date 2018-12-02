@@ -294,7 +294,66 @@ end
 ## 迭代器
 > [迭代器](https://baike.baidu.com/item/%E8%BF%AD%E4%BB%A3%E5%99%A8/3803342?fr=aladdin "迭代器")（iterator）是一种对象，它能够用来遍历标准模板库容器中的部分或全部元素，每个迭代器对象代表容器中的确定的地址。
 
-Lua中的迭代器：
-1.泛型for迭代器
-2.无状态的迭代器
-3.多状态的迭代器
+**Lua中的迭代器**：
+1. 泛型for迭代器
+2. 无状态的迭代器
+3. 多状态的迭代器
+
+**Lua内置的迭代器 pairs 与 ipairs**:
+- `pairs`：迭代table ，遍历表中所有的 key 和 value。遇到 nil 则跳过
+- `ipairs`：遍历索引从 1 开始递增直到 nil 停止
+
+```
+array = {"Lua", "C#", "Java", nil, "C++"}
+for i,v in pairs(array)	do
+	print(i,v)
+end
+--[[pairs 输出
+1	Lua
+2	C#
+3	Java
+5	C++
+--]]
+
+for i,v in ipairs(array)	do
+	print(i,v)
+end
+--[[ipairs 输出
+1	Lua
+2	C#
+3	Java
+--]]
+```
+
+
+**自定义迭代器**：
+```
+--迭代函数格式
+for 变量列表  in  迭代函数,状态函数,控制函数  do
+	body
+end
+
+--自定义迭代函数 square
+function square(state, control)
+	if(control >= state)	then
+		return nil
+	else
+		control = control+1
+		return control, control*control
+	end
+end
+--使用迭代器
+for i, j in square,9,0	do
+	print(i,j)
+end
+```
+
+迭代器各部分：
+- 变量列表：接收迭代函数返回值的一些变量(个数同返回值个数)。此例中的 `i`,`j` 与 `state`,`control`
+- 迭代函数：Lua内置有`pairs`和`ipairs`，此例中自定义的`square`
+- 状态函数：被传递给迭代函数的参数之一，一般仅赋值一次。表示总共迭代多少次。此例中的 `state`
+- 控制函数：被传递给迭代函数的参数之一，迭代过程中被多次赋值。表示当前已迭代的次数
+
+迭代过程：
+1. 调用迭代函数`square`，把状态函数`state`和控制函数`control`传递给它
+2. 如果迭代函数的返回值为`nil`,则退出 `for循环`，否则把返回值赋给变量列表，并执行循环体实现迭代过程
