@@ -274,7 +274,7 @@ end
 ## 表 table
 > tableName 是 Lua 的一种数据结构用来帮助我们创建不同的数据类型，很类似于数组
 
-1.表的创建
+**表的创建**：
 
 ```
 字符串为索引：tableName1 = {key1 = "hello",key2 = "world" ...}
@@ -286,9 +286,19 @@ end
 - `tableName` ：构建的表的名字 
 - `key1,key2...` ：表内元素的索引，或称键，可为任意数据类型。当索引为字符串时(key1,key2等)，省略其双引号。若不另设索引，默认为从1开始的索引
 
-2.表的读取
+**表的读取**：
 - 索引为字符串时： `print(tableName.key1,tableName.key2)` 或 `print(tableName["key1"],tableName["key2"])`
 - 索引为数字时：`print(tableName[1],tableName[2])`
+
+**表的操作**：
+
+|用法|功能|
+|---|---|
+|`table.concat(table,"/",start,end)`|将表内从`start`到`end`号元素进行连接，用符号`/`间隔|
+|`table.insert(table,num,"str")`|插入字符串或者数字到表内第`num`号元素位置(原来的元素后移)|
+|`table.remove(table,num)`|删除表内第`num`号元素，后续元素前移|
+|`table.sort(table)`|对表内元素进行排序(规则类似C++)|
+|`table.maxn(table)` Lua5.2后已经弃用，需另写函数|返回表内最大值元素的索引|
 
 
 ## 迭代器
