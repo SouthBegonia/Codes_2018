@@ -10,7 +10,7 @@ print()
 
 --[[表的插入和移除
 table.insert(table,num,"str")
-table.remove(table,num."str")
+table.remove(table,num)
 --]]
 mytable[#mytable] = "PHP"
 print(mytable[#mytable])

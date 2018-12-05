@@ -367,3 +367,43 @@ end
 迭代过程：
 1. 调用迭代函数`square`，把状态函数`state`和控制函数`control`传递给它
 2. 如果迭代函数的返回值为`nil`,则退出 `for循环`，否则把返回值赋给变量列表，并执行循环体实现迭代过程
+
+
+## 模块 Module
+> 把一些公用的代码放在一个文件里，以 API 接口的形式在其他地方调用的机制称为模块(module)
+
+**定义模块**：
+```
+--文件名 module.lua
+
+--定义一个名为module的模块
+module = {}
+
+--定义模块内的变量、常量、函数
+module.var = 10
+module.constant = "Lua"
+module.func1 = function()
+	print("这是module内的函数")
+end
+
+--结束定义
+return module
+```
+
+**调用模块**：
+```
+--文件名 usemodule.lua
+
+--[[
+调用方法:
+require "模块名"
+require ("模块名")
+--]]
+
+require "module"
+print(module.var)
+module.func1()
+```
+
+**模块的加载机制**：
+
