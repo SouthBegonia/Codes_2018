@@ -18,7 +18,7 @@ function module.func1( )
 end
 
 local function func2(  )
-	print("这是一个私局部函数\n")
+	print("这是一个局部函数\n")
 end
 
 function module.func3(  )

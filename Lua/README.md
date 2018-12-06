@@ -301,6 +301,31 @@ end
 |`table.maxn(table)` Lua5.2后已经弃用，需另写函数|返回表内最大值元素的索引|
 
 
+## 元表 Metatable
+> 元表用于自定义一些对表的操作，以扩展表的功能
+
+**创建元表**：
+```
+mytable = {}	--普通表
+mymetatable = {}	--元表
+
+```
+
+**设置普通表的元表**：
+```
+--设置 mymetatable 为 mytable 的元表
+mytable = setmetatable(mytable,mymetatable)
+
+--创建并设置元表
+mytable = setmetatable({},{})
+```
+
+**取得元表**：
+```
+getmetatable(mymetatable)	--返回mymetatable
+```
+
+
 ## 迭代器
 > [迭代器](https://baike.baidu.com/item/%E8%BF%AD%E4%BB%A3%E5%99%A8/3803342?fr=aladdin "迭代器")（iterator）是一种对象，它能够用来遍历标准模板库容器中的部分或全部元素，每个迭代器对象代表容器中的确定的地址。
 
