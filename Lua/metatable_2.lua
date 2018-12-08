@@ -8,6 +8,7 @@ mytable = {"Lua","C++","Java","Python"}	--普通表
 mymetatable = {}	--元表
 
 --[[把普通表设置为元表，返还被设置元表后的表--]]
+--此外如果元表中存在__metatable键值，setmetatable会失败
 mytable = setmetatable(mytable,mymetatable)	--mymetatable 是 mytable 的元表
 print(mytable[3])
 

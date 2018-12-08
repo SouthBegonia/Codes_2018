@@ -318,11 +318,32 @@ mytable = setmetatable(mytable,mymetatable)
 
 --创建并设置元表
 mytable = setmetatable({},{})
+
+--如果元表中存在__metatable键值，setmetatable会失败
+--使用__metatable 可以保护元表，禁止用户访问元表中的成员或者修改元表
 ```
 
 **取得元表**：
 ```
 getmetatable(mymetatable)	--返回mymetatable
+```
+
+**__index元方法**：
+- 功能：当通过**键**来访问 table 的时候，如果这个键**没有值**，那么Lua就会寻找该table的**metatable**（假定有metatable）中的**__index 键**。**__index** 可以为表或者函数，返回某一值给该**键**。
+
+- 搜索机制：
+
+```
+mytable = {"Lua","Java","C++"}
+mymetatable = {
+	__index = function(tab,key)
+		print("调用了 __index 方法".. tab .. key)
+		-- return ...
+	end
+}
+mytable = setmetatable(mytable,mymetatable)
+print(mytable[1])	--"Lua"
+print(mytable[10])	--nil
 ```
 
 
