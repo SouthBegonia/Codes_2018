@@ -342,8 +342,31 @@ mymetatable = {
 	end
 }
 mytable = setmetatable(mytable,mymetatable)
-print(mytable[1])	--"Lua"
-print(mytable[10])	--nil
+print(mytable[1])	-->"Lua"
+print(mytable[10])	-->nil
+```
+
+**__newindex元方法**：
+- 功能：当给表的新 key (初始化时未使用到的key)进行赋值操作时会调用 **__newindex**进行一系列操作；若为已有的key则进行正常的赋值修改
+
+```
+mytable = {"Lua","Java","C++","Python"}
+mymetatable = {
+	__newindex = function ( tab,key,value )		--要修改的 key 与 value
+		print("要修改的 key 为：" .. key .. "把这个 key 的值修改为：" .. value)
+		rawset(tab,key,value)	--更新表，进行mytable[5]的赋值。仅在__newindex跟一个函数时使用该函数
+	end
+}
+mytable = setmetatable(mytable,mymetatable)
+
+mytable[1] = "Csharp"	--正常赋值修改操作
+mytable[5] = "PHP"		--调用 __newindex 处理
+
+print(mytable[5])	-->PHP
+
+--[[
+若 __newindex = newtable 时，对原表(mytable)的操作(mytable[new]= value)，结果为赋给 newtable 的 key(即得到 newtable[new] = value 而不是mytable[new] = value)
+--]]
 ```
 
 
