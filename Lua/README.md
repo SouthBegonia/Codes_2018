@@ -371,10 +371,11 @@ print(mytable[5])	-->PHP
 
 **添加表的操作符**：
 
-|元方法|表示方法|
+|元方法|表示方法|说明
 |-----|-----|
-|__add|table + newtable|
-|__sub|table - newtable|
+|__add|table + newtable|将newtable的元素添加到table元素后面|
+|__sub|table - newtable||
+|__call|table("Hello") / table(12)|用函数的用法来使用表|
 
 ## 迭代器
 > [迭代器](https://baike.baidu.com/item/%E8%BF%AD%E4%BB%A3%E5%99%A8/3803342?fr=aladdin "迭代器")（iterator）是一种对象，它能够用来遍历标准模板库容器中的部分或全部元素，每个迭代器对象代表容器中的确定的地址。
