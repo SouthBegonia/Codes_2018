@@ -11,7 +11,7 @@ mymetatable ={
 }
 mytable = setmetatable(mytable,mymetatable)
 
-v = mytable("Hello")
-print(v)
-v = mytable(12,34,567)
-print(v)
+v = mytable("Hello")	-->Hello nil nil
+print(v)		-->World
+v = mytable(12,34,567)	-->12 34 567
+print(v)		-->World
