@@ -384,17 +384,33 @@ mymetatable ={
 mytable = setmetatable(mytable,mymetatable)
 
 v = mytable("Hello")	-->Hello nil nil
-print(v)				-->World
+print(v)	-->World
 v = mytable(12,34,567)  -->12 34 567
-print(v)				-->World
+print(v)	-->World
+```
+
+**__tostring元方法**：
+- 功能：修改表的输出行为，在使用元表时即调用，可与其他元方法至于同一元表下
+
+```
+mytable = setmetatable({10,15,20},{
+	__tostring = function ( mytable )
+		local sum = 0
+		for k,v in pairs(mytable)	do
+			sum = sum + v
+		end
+		return "表内所有元素的和为 " .. sum
+	end
+	})
+print(mytable)	-->表内所有元素的和为 45
 ```
 
 **添加表的操作符**：
 
-|元方法|表示方法|说明
-|-----|-----|
+|元方法|表示方法|说明|
+|-----|-------|----|
 |__add|table + newtable|将newtable的元素添加到table元素后面|
-|__sub|table - newtable||
+|__sub|table - newtable| .. |
 
 
 ## 迭代器
