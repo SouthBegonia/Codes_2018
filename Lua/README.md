@@ -517,5 +517,34 @@ print(module.var)
 module.func1()
 ```
 
+
 **模块的加载机制**：
 
+## 协同程序 Coroutine
+
+[进程、线程和协程的区别 —— lxmhhy](https://www.cnblogs.com/lxmhhy/p/6041001.html)
+[协程 —— 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013868328689835ecd883d910145dfa8227b539725e5ed000)	
+
+简单理解Lua中协同程序意义：建立一个可以随时中断和随时恢复的函数
+```
+--coroutine.creat()方法建立协同函数
+co = coroutine.create(
+	function (a,b)
+		print(a+b)
+		coroutine.yield()	--挂起
+		print(a-b)
+	end
+	)
+
+--两次使用 coroutine.resume 实现协同函数功能
+coroutine.resume(co,30,20)	-->30
+print("Done!")		-->"Done!"
+coroutine.resume(co)	-->10
+
+--[[
+coroutine.wrap()方法同样也可建立协同函数
+使用该方法重启，仅需传递参数给协同函数。两种方法二次调用重启时无需再传递参数
+co(30,20)
+co()	
+--]]
+```
