@@ -28,8 +28,7 @@ co = coroutine.create(
 	)
 
 --重启协同函数，coroutine.resume，协同函数
---coroutine.resume(co,20,30)
-co(20,30)
+coroutine.resume(co,20,30)
 print("Done!")
 coroutine.resume(co)	--重启
 print()

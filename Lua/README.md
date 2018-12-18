@@ -523,6 +523,7 @@ module.func1()
 ## 协同程序 Coroutine
 
 [进程、线程和协程的区别 —— lxmhhy](https://www.cnblogs.com/lxmhhy/p/6041001.html)
+
 [协程 —— 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013868328689835ecd883d910145dfa8227b539725e5ed000)	
 
 简单理解Lua中协同程序意义：建立一个可以随时中断和随时恢复的函数
@@ -547,4 +548,17 @@ coroutine.wrap()方法同样也可建立协同函数
 co(30,20)
 co()	
 --]]
+```
+
+**协同函数的返回值**：
+- 函数挂起时返回：`coroutine.yield(num1,num2)`
+- 函数结束时返回：`return num3,num4`
+
+接收参数时，调用`resume`，将协同程序唤醒,`resume`操作成功返回true，否则返回false，第一个参数用来接收是否唤醒，其余参数用来接收返回的参数
+```
+res1,res2,res3 = coroutine.resume(co,var1,var2)
+print(res1,res2res3)	-->true num1 num2
+
+res1,res2,res3 = coroutine.resume()
+print(res1,res2res3)	-->true num3 num4
 ```
