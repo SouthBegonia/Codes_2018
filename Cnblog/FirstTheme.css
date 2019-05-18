@@ -1,0 +1,136 @@
+body{
+    background:#E5EAED;
+font-family:'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei', serif;
+font-size: 14px;
+color: #505050;
+line-height: 1.75em;
+background: #E5EAED;
+position: relative;
+overflow-x: hidden;
+}
+#header{
+/*博主名称*/
+background-color:#ffffff;
+font-family: 'Microsoft Yahei', serif;
+color:#505050;
+}
+::selection {
+background: #ee0000;
+/*未知*/
+color:#ffffff;
+}
+.dayTitle{
+    width:110px;
+    background:#ee0000;
+/*日期标签衬底*/
+    box-shadow:0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    font-size:14px;
+}
+.dayTitle a{
+    color:#ffffff;
+/*日期标签字体*/
+}
+.postTitle, .postTitl2, .entrylistPosttitle{
+    border-left-color:#ee0000;
+/*未知*/
+}
+#nav_next_page{
+    line-height:36px; 
+    height:36px;
+}
+#nav_next_page a{
+    border: 1px solid #ee0000;
+    background: #ee0000;
+/*未知*/
+    display:block;
+    color:white;
+    font-size:14px;
+    float:right;
+    box-shadow:0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+padding:2px 5px;
+}
+a.c_b_p_desc_readmore:link, a.c_b_p_desc_readmore:visited {
+    text-decoration: none;
+    color: #ee0000;
+/*阅读全文*/
+}
+.postDesc a:link, .postDesc a:visited {
+    text-decoration: none;
+    color: #ee0000;
+/*未知*/
+}
+.catListEssay a:link,.catListEssay a:visited {
+    text-decoration: none;
+    color: #ff0000;
+/*未知*/
+/* 00ada7 草绿色*/
+/* 05af60 蓝色*/
+/* ee0000 红色*/
+/* 090909 黑色*/
+}
+
+#sidebar_postcategory a:link,#sidebar_postcategory a:visited {
+    text-decoration: none;
+    /*color: #ee0000;*/
+/*随笔分类*/
+}
+#navList li a {
+background-color:white;
+color:#ee0000;
+}
+#site-head {
+background: #343434;
+background-image: url(https://img2018.cnblogs.com/blog/1688704/201905/1688704-20190517222405444-1343978494.jpg);
+background-attachment: fixed;
+background-size: 100% auto;
+min-height: 600px;
+display: block;
+position: relative;
+overflow: hidden;
+}
+.row {
+margin-right: -15px;
+margin-left: -15px;
+}
+#site-head h2, #site-head h1 {
+color: #fff;
+}
+@media only screen and (min-width: 1401px)
+.blog-title {
+font-size: 84px;
+line-height: 84px;
+}
+.blog-title {
+font-size: 50px;
+line-height: 62px;
+letter-spacing: -1px;
+margin: 10px 0;
+text-transform: capitalize;
+font-weight: normal;
+font-family: 'Microsoft Yahei', serif;}
+#site-head h2, #site-head h1 {
+color: #ffffff;
+/* 主标题 */
+}
+@media only screen and (min-width: 1401px)
+.blog-description {
+font-size: 24px;
+}
+.blog-description {
+margin: 0;
+font-size: 2rem;
+line-height: 1.5em;
+/* 副标题属性 */
+color: #ffffff;
+font-weight: 300;
+font-family: 'Roboto Slab', serif;
+letter-spacing: 0;
+position: relative;
+margin-top: 10px;
+padding-top: 10px;
+}
+.site-description {
+min-height: 300px;
+padding: 100px;
+position: relative;
+} 

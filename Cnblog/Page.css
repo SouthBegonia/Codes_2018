@@ -1,0 +1,21 @@
+/*È¥µô¹ã¸æ*/
+#site_nav_under {
+    display: none;
+}
+.c_ad_block, .ad_text_commentbox {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+#ad_under_google {
+    height: 0;
+    overflow: hidden;
+}
+#ad_under_google a {
+    display: none;
+}
+#ad_t2{
+ display: none;
+    margin: 0;
+    padding: 0;
+}
