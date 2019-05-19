@@ -1,6 +1,7 @@
 # 博客园blog定制
 
 记录我在定制个人blog页面效果时遇到的技巧及方法等。
+效果：[SouthBegonia](https://www.cnblogs.com/SouthBegonia/)
 
 ## 基本流程
 1. 设定博客皮肤为BluSky
