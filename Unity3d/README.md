@@ -25,6 +25,7 @@
 
 <h2 id="1">调试</h2>
 在某函数内进行`Debug.Log(...)`可实现调试检测，例如：
+
 ```
 public class Player : MonoBehaviour {
 
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour {
 ```
 
 <h2 id="2">碰撞体</h2>
+
 前提：碰撞两者都有碰撞器 Collider ，至少一物体有刚体 Rigidbody（详细前提见 [Unity-Manual-Colliders](https://docs.unity3d.com/Manual/CollidersOverview.html) ）
 
 ```
@@ -60,19 +62,21 @@ private void OnCollisionExit(Collision collision)
 // 碰撞持续检测
 private void OnCollisionStay(Collision collision)
         print("OnCollisionSaty");
-
 ```
 
 <h2 id="3">触发器</h2>
+
 存在于碰撞体collider页面栏，勾选is Trigger 则表示物体为触发器(可以穿过)，否则物体为碰撞体。
 
 <h2 id="4">视角</h2>
+
 游戏视角的移动
 
 <h3 id="4.1">键盘视角平移</h3>
 对`Main Camera`创建脚本，在`Update`内调用：`transform.Translate()`实现视角移动
 
 <h2 id="5">光照贴图</h2>
+
 灯光是实时计算的(默认设置：`Light|Mode|Realtime`)，对不变动的灯光进行贴图可以节省资源，在`Windows|Rendering|Lighting Setting` 打开了`Lighting Setting` 页面点击 `Generate Lighting` 实现灯光贴图。
 
 <h2 id="6">游戏对象</h2>
@@ -92,6 +96,7 @@ private void OnCollisionStay(Collision collision)
 - m_transform.position，m_transform.rotation：预制体位置及旋转角度，默认下为`transform.position,transrotation`说明地址为脚本所在对象的位置；也可自行修改
 
 用法：
+
 ```
 //创建对象 b 接收实体化的预制体 bullet
 GameObject b = GameObject.Instantiate(bullet, transform.position, transform.rotation);
@@ -108,7 +113,9 @@ Rigidbody rgd = b.GetComponent<Rigidbody>();
 
 
 <h2 id="7">交互类</h2>
+
 <h3 id="7.1">鼠标输入</h3>
+
 `Input.GetMouseButtonDown()`：读取鼠标按下情况，括号内容即为鼠标不同状态：
 - 0：左键
 - 1：右键
