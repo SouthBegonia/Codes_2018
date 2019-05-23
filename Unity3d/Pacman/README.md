@@ -148,3 +148,11 @@ UI：
 - 添加image作为logo；
 - 创建空物体命名StartPanel，包含2个UI->text，start和exit，修改字体，调整位置
 - 创建空物体命名GamePanel，包含3个UI->text，remain，eaten，修改字体，score
+- 倒计时321：同理将素材文件Start切片，设置动作，修改每个动作间隔时长为1s:Animation->Samples
+
+开始实现UI过程：
+- GameManager.cs内持有2个UI面板，3个动画和音乐
+
+public才可在其他脚本调用
+
+延迟执行不用协程，其他并行处理采用协程
